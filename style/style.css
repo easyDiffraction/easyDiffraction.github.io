@@ -294,11 +294,21 @@ button:hover {
     color: white;
     cursor: pointer; }
 
+button:disabled {
+  background-color: #bbb;
+  color: #eee;
+  cursor: initial;
+}
+
+button:disabled svg {
+  fill: #eee;
+}
+
 /*********/
 /* Icons */
 /*********/
 
-#icon-davinci {
+#icon-easydiffraction {
     --color-grad-top: #1aa1e3;
     --color-grad-bottom: #3dafe8;
     --color-main: #0d86c2;
@@ -406,6 +416,14 @@ input[type=submit]:hover {
 /* Custom elements */
 /*******************/
 
+.main-section section article button {
+  width: 15em;
+  height: 3.6em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.8em;
+}
+
 .boxitemize {
     background: #f8f8f8;
     border: #eaeaea solid 1px;
@@ -464,8 +482,8 @@ section.toc h6 {
     background-color: #f9f9f9; }
 .main-section article {
     padding-top: 2.25em; }
-.main-section.icon.davinci {
-    height: 4em;
+.main-section.icon.easydiffraction {
+    height: 12em;
     width: auto; }
 
 .version {
@@ -475,7 +493,7 @@ section.toc h6 {
     color: #666; }
 
 .description {
-    width: 25em;
+    width: 27em;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.6em;
