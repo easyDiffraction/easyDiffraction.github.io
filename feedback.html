@@ -1,16 +1,36 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Feedback</title>
-        <style type="text/css">
-            #elformo_honeypot {
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
+  <head>
+    <title>easyDiffraction GUI Prototype Feedback Form</title>
+    <link href="style/style.css" rel="stylesheet">
+    <meta content="document" name="resource-type">
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="feedback.html">Feedback Form</a>
+            </li>
+            <li>
+              <a href="https://github.com/easyDiffraction/QmlGuiPrototype/issues">Issue Tracker</a>
+            </li>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <div class="basic">
+      <section class="toc">
+        <h1>Feedback Form</h1>Please give your feedback, report bugs, or suggest new features for the <b>easyDiffraction GUI Prototype</b>.
         <form action="https://mailthis.to/qmlguiprototype" method="POST" encType="multipart/form-data">
-            <h3>Contact Form (example)</h3>
             <!-- Name -->
             <input type="text" name="name" placeholder="Your name">
             <!-- Email -->
@@ -20,8 +40,8 @@
             <!-- Textarea (Message) -->
             <textarea name="message" placeholder="Issue description"></textarea>
             <!-- File attachments -->
-            <input type="file" name="file" placeholder="">
-            
+            <button id="button-for-upload-file" for="upload-file">Upload file...</button>
+            <input id="upload-file" type="file" name="file" placeholder="">
             <!-- Optional (hidden) fields -->
             <!-- Custom email Subject -->
             <!-- <input type="hidden" name="_subject" value="Contact form submitted"> -->
@@ -33,9 +53,21 @@
             <!-- <input type="hidden" name="_confirmation" value="custom confirmation message!!!"> -->
             <!-- Redirect to a page after recaptcha -->
             <!-- <input type="hidden" name="_after" value="https://easydiffraction.github.io/thankyou.html"> -->
-            
             <!-- Submit Button -->
-            <input type="submit" name="submit" value="Submit Form" class="btn btn-primary">
+            <input type="submit" name="submit" value="Submit Form" class="button">
         </form>
-    </body>
+      </section>
+    </div>
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li>Copyright &copy; 2019
+              <a href="">easyDiffraction</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+  </body>
 </html>
