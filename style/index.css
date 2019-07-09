@@ -1,8 +1,13 @@
+/* intro area  */
+
+.intro-area {
+  background-color: #f9f9f9;
+}
+
 /* logo area  */
 
 .logo-area {
   padding-top: 2em;
-  background-color: #f9f9f9;
 }
 
 .logo-area img {
@@ -14,7 +19,6 @@
 
 .version-area {
   padding-top: 0.5em;
-  background-color: #f9f9f9;
 }
 
 .version-area section p {
@@ -26,7 +30,6 @@
 
 .description-area {
   padding-top: 2em;
-  background-color: #f9f9f9;
 }
 
 .description-area section div {
@@ -41,7 +44,6 @@
 .download-area {
   padding-top: 2em;
   padding-bottom: 4em;
-  background-color: #f9f9f9;
 }
 
 .download-area button {
@@ -71,7 +73,7 @@
 /* features area  */
 
 .features-area {
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
   padding-top: 1em;
   padding-bottom: 2em;
 }

@@ -33,11 +33,11 @@
 /*****************/
 
 * {
-  background: transparent;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
+  background-color: transparent;
   /*font-style: normal; /* normal, italic, oblique, ... */
   /*font-weight: normal; /* normal, bold, bolder, lighter, ... */
   font-variant: normal; /* normal, small-caps, ... */
@@ -51,6 +51,18 @@ html {
 
 body {
   height: 100%;
+}
+
+.main {
+  min-height: calc(100% - 6em); /* minus header and footer heights */
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+header, footer {
+  height: 3em;
+  line-height: 3em;
+  font-size: 1em;
 }
 
 section {
@@ -100,137 +112,125 @@ section {
 @media screen and (max-width: 792px) { section { width: 94%; } }
 @media screen and (max-width: 780px) { section { width: 95%; } }
 
-header, footer {
-  height: 3em;
-  line-height: 3em;
-  font-size: 1em;
-  background-color: #313131;
-}
-
-nav {
-  color: #fff;
-}
-
 article {
   padding-top: 2em;
   padding-bottom: 0em;
   font-size: 1em;
 }
 
+nav {
+  color: #fff;
+}
+
 h1 {
-    font-weight: normal;
-    font-size: 2.75em;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    color: #000; }
+  font-weight: normal;
+  font-size: 2.75em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  color: #000;
+}
 
 h2 {
-    font-weight: normal;
-    font-size: 1.75em;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    color: #000; }
+  font-weight: normal;
+  font-size: 1.75em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  color: #000;
+}
 
 h3 {
-    font-weight: bold;
-    font-size: 1.25em;
-    padding-top: 1.5em;
-    padding-bottom: 1.0em;
-    color: #222; }
+  font-weight: bold;
+  font-size: 1.25em;
+  padding-top: 1.5em;
+  padding-bottom: 1.0em;
+  color: #222;
+}
 
 h4 {
-    font-weight: bold;
-    font-size: 1.125em;
-    padding-top: 1em;
-    padding-bottom: 0.25em;
-    color: #444; }
+  font-weight: bold;
+  font-size: 1.125em;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
+  color: #444;
+}
 
 h5 {
-    font-weight: bold;
-    font-size: 1.125em;
-    padding-top: 0.5em;
-    padding-bottom: 0.1em;
-    color: #555; }
+  font-weight: bold;
+  font-size: 1.125em;
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  color: #555;
+}
 
 h6 {
-    font-weight: normal;
-    font-size: 1em;
-    padding-top: 0.25em;
-    padding-bottom: 0em;
-    color: #666; }
+  font-weight: normal;
+  font-size: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0em;
+  color: #666;
+}
 
 p {
-    font-size: 1.125em;
-    color: #444; }
+  font-size: 1.125em;
+  color: #444;
+}
 
 b {
-    color: #555; }
+  color: #555;
+}
+
+/*********/
+/* Links */
+/*********/
 
 a {
-    color: #008bd0;
-    text-decoration: none; }
+  color: #008bd0;
+  text-decoration: none;
+}
 
 a:hover {
-    color: #009fee; }
+  color: #009fee;
+}
 
-ol {
-    padding-left: 2em; }
+/*********/
+/* Items */
+/*********/
 
 ul {
-    padding-left: 2em;
-    padding-bottom: 1ex;
-  }
+  width: 100%;
+  text-align: right;
+}
 
-ul ul {
-    padding-left: 2em; }
-
-/*ul li {
-    font-size: 1.125em; }*/
-
-ul li:first-child h3 {
-    padding-top: 0.0em; }
-
-ul li h3 {
-    padding-top: 1.0em; }
-
-ul li p {
-    font-size: 1.125em;
+li {
+  display: inline;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; }
-
-nav ul li {
-    padding: 0.0em;
-    float: left; }
-
-nav ul li a {
-    color: #fff;
-    text-align: center;
-    text-decoration: none; }
-
-nav ul li a:hover:not(.active) {
-    color: #b7b7b7;
+  list-style-type: none;
+  overflow: hidden;
 }
 
-header ul li + li {
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  color: #b7b7b7;
+}
+
+header ul li {
   padding-left: 1.5em;
 }
 
-header ul li:last-child {
-  float: right;
+header ul li:first-child {
+  float: left;
+  padding-left: 0em;
 }
 
-footer ul li {
-    float: none;
-    color: #b7b7b7;
-}
-
-footer ul li + li {
-    margin-top: -1.5em;
+footer ul {
+  color: #b7b7b7;
+  text-align: center;
 }
 
 /***********/

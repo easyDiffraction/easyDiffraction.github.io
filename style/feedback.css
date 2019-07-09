@@ -1,13 +1,8 @@
-/* feedback form  */
+/* main */
 
-.feedback-form {
-  height: calc(100% - 6em);
-  background-color: #f9f9f9;
-  overflow: hidden;
-}
-
-.feedback-form section {
+.main section {
   padding-top: 1em;
+  line-height: 1.5em;
   text-align: left;
 }
 
@@ -16,31 +11,31 @@
 /*********/
 
 form {
-  margin-top: 0.5em;
-  margin-right: 0.5em;
+  width: 100%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea {
-    width: 100%; /* Full width */
-    padding: 0.7em; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 0.5em; /* Add a top margin */
-    margin-bottom: 0.5em; /* Bottom margin */
-    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
-    font-size: 1em;
+  width: inherit; /* Full width */
+  padding: 0.7em; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0.5em; /* Add a top margin */
+  margin-bottom: 0.5em; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 1em;
+  background-color: white
 }
 
 textarea {
-  height: 200px;
+  height: 8em;
   font-size: 1em;
 }
 
 #button-for-upload-file {
-  display: inline-block;
+  display: block;
   height: 2.6em;
-  width: 100%;
+  width: inherit;
   margin-top: 0.25em;
   background-color: #777;
   color: white;
@@ -66,7 +61,7 @@ textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   height: 2.6em;
-  width: 100%;
+  width: inherit;
   margin-top: 1em;
   background-color: #109be0;
   color: white;
