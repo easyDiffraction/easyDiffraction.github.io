@@ -7,7 +7,7 @@
 /* logo area  */
 
 .logo-area {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .logo-area img {
@@ -42,8 +42,8 @@
 /* download area  */
 
 .download-area {
-  padding-top: 2em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 4.5em;
 }
 
 .download-area button {
