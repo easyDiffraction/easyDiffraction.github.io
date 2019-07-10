@@ -228,6 +228,15 @@ header ul li:first-child {
   padding-left: 0em;
 }
 
+header a img {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0.15em;
+  margin-right: 0.4em;
+}
+
 footer ul {
   color: #b7b7b7;
   text-align: center;
@@ -260,7 +269,7 @@ button {
   height: 2.6em;
   width: 100%;
   margin: 0em;
-  background-color: #109be0;
+  background-color: #00a1df;
   color: white;
   border: none;
   border-radius: 4px;
@@ -289,7 +298,7 @@ button span {
 }
 
 button:hover {
-  background-color: #0d8bcf;
+  background-color: #0090c9;
   cursor: pointer;
 }
 
