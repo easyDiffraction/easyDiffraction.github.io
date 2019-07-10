@@ -11,8 +11,9 @@
 }
 
 .logo-area img {
-  width: 30em;
-  height: auto;
+  height: 4.5em;
+  padding-right: 0.75em;
+  width: auto;
 }
 
 /* version area  */
