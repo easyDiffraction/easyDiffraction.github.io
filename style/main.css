@@ -66,7 +66,7 @@ header, footer {
 }
 
 section {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   padding-top: 0em;
@@ -75,47 +75,65 @@ section {
 }
 
 /* for i in range(36): print("@media screen and (max-width: {0}px) {{ section {{ width: {1}%; }} }}".format(1200-12*i, 60+i)) */
-@media screen and (max-width: 1200px) { section { width: 60%; } }
-@media screen and (max-width: 1188px) { section { width: 61%; } }
-@media screen and (max-width: 1176px) { section { width: 62%; } }
-@media screen and (max-width: 1164px) { section { width: 63%; } }
-@media screen and (max-width: 1152px) { section { width: 64%; } }
-@media screen and (max-width: 1140px) { section { width: 65%; } }
-@media screen and (max-width: 1128px) { section { width: 66%; } }
-@media screen and (max-width: 1116px) { section { width: 67%; } }
-@media screen and (max-width: 1104px) { section { width: 68%; } }
-@media screen and (max-width: 1092px) { section { width: 69%; } }
-@media screen and (max-width: 1080px) { section { width: 70%; } }
-@media screen and (max-width: 1068px) { section { width: 71%; } }
-@media screen and (max-width: 1056px) { section { width: 72%; } }
-@media screen and (max-width: 1044px) { section { width: 73%; } }
-@media screen and (max-width: 1032px) { section { width: 74%; } }
-@media screen and (max-width: 1020px) { section { width: 75%; } }
-@media screen and (max-width: 1008px) { section { width: 76%; } }
-@media screen and (max-width: 996px) { section { width: 77%; } }
-@media screen and (max-width: 984px) { section { width: 78%; } }
-@media screen and (max-width: 972px) { section { width: 79%; } }
-@media screen and (max-width: 960px) { section { width: 80%; } }
-@media screen and (max-width: 948px) { section { width: 81%; } }
-@media screen and (max-width: 936px) { section { width: 82%; } }
-@media screen and (max-width: 924px) { section { width: 83%; } }
-@media screen and (max-width: 912px) { section { width: 84%; } }
-@media screen and (max-width: 900px) { section { width: 85%; } }
-@media screen and (max-width: 888px) { section { width: 86%; } }
-@media screen and (max-width: 876px) { section { width: 87%; } }
-@media screen and (max-width: 864px) { section { width: 88%; } }
-@media screen and (max-width: 852px) { section { width: 89%; } }
-@media screen and (max-width: 840px) { section { width: 90%; } }
-@media screen and (max-width: 828px) { section { width: 91%; } }
-@media screen and (max-width: 816px) { section { width: 92%; } }
-@media screen and (max-width: 804px) { section { width: 93%; } }
-@media screen and (max-width: 792px) { section { width: 94%; } }
-@media screen and (max-width: 780px) { section { width: 95%; } }
+/* for i in range(51): print("@media screen and (max-width: {0}px) {{ section {{ width: {1}%; }} }}".format(1600-10*i, 70+i*0.5)) */
+/* @media screen and (max-width: 2000px) { section { width: 80%; } } */
+@media screen and (max-width: 1600px) { section { width: 70.0%; } }
+@media screen and (max-width: 1590px) { section { width: 70.5%; } }
+@media screen and (max-width: 1580px) { section { width: 71.0%; } }
+@media screen and (max-width: 1570px) { section { width: 71.5%; } }
+@media screen and (max-width: 1560px) { section { width: 72.0%; } }
+@media screen and (max-width: 1550px) { section { width: 72.5%; } }
+@media screen and (max-width: 1540px) { section { width: 73.0%; } }
+@media screen and (max-width: 1530px) { section { width: 73.5%; } }
+@media screen and (max-width: 1520px) { section { width: 74.0%; } }
+@media screen and (max-width: 1510px) { section { width: 74.5%; } }
+@media screen and (max-width: 1500px) { section { width: 75.0%; } }
+@media screen and (max-width: 1490px) { section { width: 75.5%; } }
+@media screen and (max-width: 1480px) { section { width: 76.0%; } }
+@media screen and (max-width: 1470px) { section { width: 76.5%; } }
+@media screen and (max-width: 1460px) { section { width: 77.0%; } }
+@media screen and (max-width: 1450px) { section { width: 77.5%; } }
+@media screen and (max-width: 1440px) { section { width: 78.0%; } }
+@media screen and (max-width: 1430px) { section { width: 78.5%; } }
+@media screen and (max-width: 1420px) { section { width: 79.0%; } }
+@media screen and (max-width: 1410px) { section { width: 79.5%; } }
+@media screen and (max-width: 1400px) { section { width: 80.0%; } }
+@media screen and (max-width: 1390px) { section { width: 80.5%; } }
+@media screen and (max-width: 1380px) { section { width: 81.0%; } }
+@media screen and (max-width: 1370px) { section { width: 81.5%; } }
+@media screen and (max-width: 1360px) { section { width: 82.0%; } }
+@media screen and (max-width: 1350px) { section { width: 82.5%; } }
+@media screen and (max-width: 1340px) { section { width: 83.0%; } }
+@media screen and (max-width: 1330px) { section { width: 83.5%; } }
+@media screen and (max-width: 1320px) { section { width: 84.0%; } }
+@media screen and (max-width: 1310px) { section { width: 84.5%; } }
+@media screen and (max-width: 1300px) { section { width: 85.0%; } }
+@media screen and (max-width: 1290px) { section { width: 85.5%; } }
+@media screen and (max-width: 1280px) { section { width: 86.0%; } }
+@media screen and (max-width: 1270px) { section { width: 86.5%; } }
+@media screen and (max-width: 1260px) { section { width: 87.0%; } }
+@media screen and (max-width: 1250px) { section { width: 87.5%; } }
+@media screen and (max-width: 1240px) { section { width: 88.0%; } }
+@media screen and (max-width: 1230px) { section { width: 88.5%; } }
+@media screen and (max-width: 1220px) { section { width: 89.0%; } }
+@media screen and (max-width: 1210px) { section { width: 89.5%; } }
+@media screen and (max-width: 1200px) { section { width: 90.0%; } }
+@media screen and (max-width: 1190px) { section { width: 90.5%; } }
+@media screen and (max-width: 1180px) { section { width: 91.0%; } }
+@media screen and (max-width: 1170px) { section { width: 91.5%; } }
+@media screen and (max-width: 1160px) { section { width: 92.0%; } }
+@media screen and (max-width: 1150px) { section { width: 92.5%; } }
+@media screen and (max-width: 1140px) { section { width: 93.0%; } }
+@media screen and (max-width: 1130px) { section { width: 93.5%; } }
+@media screen and (max-width: 1120px) { section { width: 94.0%; } }
+@media screen and (max-width: 1110px) { section { width: 94.5%; } }
+@media screen and (max-width: 1100px) { section { width: 95.0%; } }
 
 article {
   padding-top: 2em;
   padding-bottom: 0em;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 nav {
@@ -304,14 +322,14 @@ button {
   border-radius: 4px;
   text-rendering: geometricPrecision;
   font-size: 1em;
-  font-weight: bold;
+  _font-weight: bold;
   text-rendering: geometricPrecision;
 }
 
 button img {
   display: inline-block;
-  height: 1.5em;
-  width: auto;
+  width: 1.5em;
+  height: auto;
   margin-right: 0.5em;
   vertical-align: middle;
 }
@@ -319,12 +337,13 @@ button img {
 button div {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.05em;
+  font-size: 1.1em;
+  line-height: 1.1em;
 }
 
 button span {
   display: block;
-  font-size: 0.65em;
+  font-size: 0.7em;
 }
 
 button:hover {
