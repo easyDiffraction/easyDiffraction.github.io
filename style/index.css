@@ -7,43 +7,37 @@
 /* logo area  */
 
 .logo-area {
-  padding-top: 3.2em;
+  padding-top: 3.0em;
 }
 
 .logo-area img {
-  height: 4.5em;
-  padding-right: 0.75em;
+  height: 5em;
   width: auto;
+  padding-right: 0.75em;
+  padding-top: 0.75em;
 }
 
-/* version area  */
+/* motto area  */
 
-.version-area {
-  padding-top: 0.0em;
+.motto-area {
+  padding-top: 2em;
 }
 
-.version-area section p {
-  font-size: 1.05em;
-  color: #555
+.motto-area section span {
+  color: #222;
+  font-size: 2.2em;
+  line-height: 1em;
 }
 
-/* description area  */
+/* prototype area  */
 
-.description-area {
+.prototype-area {
+  padding-top: 3em;
 }
 
-.description-area section div {
-  padding-top: 1em;
-  display: inline-block;
-  font-size: 2.3em;
-  line-height: 1.3em;
-  color: #222
-}
-
-.description-area section p {
-  padding-top: 2.2em;
+.prototype-area section p {
+  color: #333;
   font-size: 1.1em;
-  line-height: 1.3em;
 }
 
 /* download area  */
@@ -54,8 +48,8 @@
 }
 
 .download-area button {
-  height: 3.6em;
-  width: 15em;
+  height: 4em;
+  width: 16.5em;
 }
 
 .download-area section article {
@@ -77,23 +71,38 @@
   margin-bottom: -1.5em;
 }
 
+/* description area  */
+
+.description-area {
+  padding-top: 4em;
+  padding-bottom: 3em;
+  background-color: #e0e0e0;
+}
+
+.description-area section p {
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+
 /* features area  */
 
 .features-area {
-  background-color: #f0f0f0;
-  padding-top: 1em;
+  padding-top: 0em;
   padding-bottom: 2em;
+  background-color: #f0f0f0;
+}
+
+.features-area section h3 {
+  padding-top: 0em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  color: #222;
 }
 
 .features-area section article {
   width: 35%;
-  margin: 0.5em 2.5em;
+  margin: 0.5em 2.0em;
   vertical-align: top;
   display: inline-block;
-}
-
-.features-area h3 {
-  padding-top: 0em;
-  padding-bottom: 0.5em;
-  font-weight: bold;
 }
