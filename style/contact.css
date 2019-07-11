@@ -1,7 +1,12 @@
 /* main */
 
 .main section {
-  max-width: 40em;
+  max-width: 42em;
+  text-align: left;
+}
+
+.main section p {
+  margin-bottom: 1em;
 }
 
 /* title area  */
@@ -45,7 +50,7 @@ textarea {
 
 input[type=submit] {
   height: 2.6em;
-  width: inherit;
+  width: 10em;
   margin-top: 0.4em;
   background-color: #00a1df;
   color: white;
@@ -53,9 +58,19 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
+  font-weight: bold;
   text-rendering: geometricPrecision;
 }
 
 input[type=submit]:hover {
   background-color: #0090c9;
+}
+
+/* required field info  */
+
+form span {
+  line-height: 2.6em;
+  float: right;
+  font-size: 1em;
+  color: #888;
 }

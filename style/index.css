@@ -7,7 +7,7 @@
 /* logo area  */
 
 .logo-area {
-  padding-top: 3em;
+  padding-top: 3.2em;
 }
 
 .logo-area img {
@@ -19,31 +19,37 @@
 /* version area  */
 
 .version-area {
-  padding-top: 0.5em;
+  padding-top: 0.0em;
 }
 
 .version-area section p {
-  font-size: 1.0em;
-  color: #666
+  font-size: 1.05em;
+  color: #555
 }
 
 /* description area  */
 
 .description-area {
-  padding-top: 2em;
 }
 
 .description-area section div {
-  width: 70%;
+  padding-top: 1em;
   display: inline-block;
-  font-size: 2.0em;
+  font-size: 2.3em;
+  line-height: 1.3em;
+  color: #222
+}
+
+.description-area section p {
+  padding-top: 2.2em;
+  font-size: 1.1em;
   line-height: 1.3em;
 }
 
 /* download area  */
 
 .download-area {
-  padding-top: 3em;
+  padding-top: 0.1em;
   padding-bottom: 4.5em;
 }
 

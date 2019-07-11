@@ -137,6 +137,7 @@ h1 img {
   margin-right: 0.3em;
   margin-bottom: 0.2em;
   vertical-align: middle;
+  filter: invert(20%); /* black to dark gray */
 }
 
 h2 {
@@ -181,7 +182,17 @@ h6 {
 
 p {
   font-size: 1.125em;
-  color: #444;
+  color: #555;
+}
+
+p img {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  margin-right: 0.3em;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+  filter: invert(40%); /* black to dark gray */
 }
 
 b {
@@ -219,13 +230,21 @@ nav ul {
   overflow: hidden;
 }
 
+nav ul li {
+  font-weight: bold;
+}
+
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
   color: #b7b7b7;
+}
+
+nav ul li a:hover:not(.active) > img { /* change "img" when hover "a" */
+  filter: invert(100%) opacity(50%);
 }
 
 header ul li {
@@ -244,6 +263,7 @@ header a img {
   vertical-align: middle;
   margin-bottom: 0.15em;
   margin-right: 0.4em;
+  filter: invert(90%);
 }
 
 footer ul {
@@ -284,6 +304,8 @@ button {
   border-radius: 4px;
   text-rendering: geometricPrecision;
   font-size: 1em;
+  font-weight: bold;
+  text-rendering: geometricPrecision;
 }
 
 button img {
@@ -297,8 +319,7 @@ button img {
 button div {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 1.05em;
 }
 
 button span {

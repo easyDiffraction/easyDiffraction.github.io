@@ -35,7 +35,9 @@
       <!--- title area --->
       <div class="title-area">
         <section>
-          <h1><img src="icons/envelope_black.svg">Contact Us</h1>
+          <h1><img src="icons/envelope.svg">Contact Us</h1>
+          <p>For general questions or comments, please contact us at <a href="mailto:easydiffraction@icloud.com">easyDiffraction@icloud.com</a>, or fill out the form below.</p>
+          <p>For bug reports and feature requests, please use <a href="https://github.com/easyDiffraction/QmlGuiPrototype/issues">GitHub Issue Tracker</a> instead (free registration required).</p>
         </section>
       </div>
       <!--- title area --->
@@ -44,12 +46,13 @@
       <div class="form-area">
         <section>
           <form action="https://mailthis.to/qmlguiprototype2" method="POST" encType="multipart/form-data">
-            <input type="text" name="name" placeholder="Full name" required>
-            <input type="email" name="_replyto" placeholder="Email address" required>
-            <input type="text" name="_subject" placeholder="Subject" required>
-            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="text" name="name" placeholder="Full name *" required>
+            <input type="email" name="_replyto" placeholder="Email address *" required>
+            <input type="text" name="_subject" placeholder="Subject *" required>
+            <textarea name="message" placeholder="Message *" required></textarea>
             <input type="hidden" name="_honeypot" value=""> <!-- Honeypot (to catch comment spam bots) -->
-            <input type="submit" name="submit" value="Send Message">
+            <input type="submit" name="submit" value="Send">
+            <span>* required field</span>
           </form>
         </section>
       </div>
