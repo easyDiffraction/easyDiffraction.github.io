@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <!--- HEAD --->
+  <head>
+    <meta charset="UTF-8">
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/documentation.css" rel="stylesheet">
+    <link href="icons/easydiffraction.ico" rel="shortcut icon" type="image/x-icon">
+    <title>easyDiffraction User Manual</title>
+  </head>
+  <!--- HEAD --->
+
+  <!--- BODY --->
+  <body>
+
+    <!--- header with navigation --->
+    <header>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="index.html"><img src="icons/easydiffraction.svg">easyDiffraction</a></li>
+            <li><a href="documentation.html"><img src="icons/book-reader.svg">Documentation</a></li>
+            <li><a href="https://github.com/easyDiffraction/QmlGuiPrototype"><img src="icons/github.svg">GitHub</a></li>
+            <li><a href="https://github.com/easyDiffraction/QmlGuiPrototype/issues"><img src="icons/bug.svg">Issues</a></li>
+            <li><a href="contact.html"><img src="icons/envelope.svg">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <!--- header with navigation --->
+
+    <!--- main --->
+    <div class="main">
+
+      <!--- doc area --->
+      <div class="doc-area">
+        <section>
+          <article>
+            <h1>3. How to Use</h1>
+            <p>In this chapter we'll look at how to work with <b>easyDiffraction</b>.</p>
+
+              <h2 id="3.2.-data-processing-workflow">3.2. Data processing workflow</a></h3>
+              <p>This section describes all the steps in the data processing with <b>easyDiffraction</b>, starting form the opening of input data files and ending with exporting of calculated parameters.</p>
+
+                <h3 id="3.2.2.-experimental-data">3.2.2. Load experimental data</a></h3>
+                <p>Here you can see how to load the experimental data files.</p>
+
+                  <h4>Supported file formats</h4>
+                  <p>A typical powder diffraction data file is shown below.</p>
+                  <code>
+                  #wavelength 0.84<br>
+                  #field 1.0<br>
+                  # ttheta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IntUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sIntUP&nbsp;&nbsp;&nbsp;&nbsp;IntDOWN&nbsp;&nbsp;&nbsp;sIntDOWN<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;4.00&nbsp;&nbsp;465.80000&nbsp;&nbsp;128.97000&nbsp;&nbsp;301.88000&nbsp;&nbsp;129.30000<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;4.20&nbsp;&nbsp;323.78000&nbsp;&nbsp;118.22000&nbsp;&nbsp;206.06000&nbsp;&nbsp;120.00000<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;4.40&nbsp;&nbsp;307.14000&nbsp;&nbsp;115.90000&nbsp;&nbsp;230.47000&nbsp;&nbsp;116.53000<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;4.60&nbsp;&nbsp;172.13000&nbsp;&nbsp;115.84000&nbsp;&nbsp;236.52000&nbsp;&nbsp;113.74000<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...
+                  </code>
+                  <ul>
+                    <li><b>wavelength</b>: Experimental neutron wavelength.</li>
+                    <li><b>field</b>: Applied magnetic field.</li>
+                    <li><b>ttheta</b>: Angular position of the Bragg peak.</li>
+                    <li><b>IntUP</b>: Intensity of the scattered beam of neutrons polarized with spin "UP".</li>
+                    <li><b>sIntUP</b>: Standard deviation of IntUP.</li>
+                    <li><b>IntDOWN</b>: Intensity of the scattered beam of neutrons polarized with spin "DOWN".</li>
+                    <li><b>sIntDOWN</b>: Standard deviation of IntDOWN.</li>
+                  </ul>
+
+                <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
+                <p>Here you can see how to define sample model.</p>
+
+                <h3 id="3.2.4.-analysis">3.2.4. Perform data analysis</a></h3>
+                <p>Here you can see how to perform data analysis.</p>
+
+                <h3 id="3.2.5.-summary">3.2.5. Generate summary report</a></h3>
+                <p>Here you can see how to generate summary report.</p>
+          </article>
+        </section>
+      </div>
+      <!--- doc area --->
+
+    </div>
+    <!--- main --->
+
+    <!--- footer with navigation --->
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li>2019 • <a href="index.html">easyDiffraction</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+    <!--- footer with navigation --->
+
+    <!--- BODY --->
+    </body>
+</html>

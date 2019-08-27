@@ -140,6 +140,19 @@ nav {
   color: #fff;
 }
 
+code {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  background: #f8f8f8;
+  border: #eaeaea solid 1px;
+  border-radius: 4px;
+  margin-left: -0.1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
 h1 {
   font-weight: normal;
   font-size: 3.0em;
@@ -161,8 +174,8 @@ h1 img {
 h2 {
   font-weight: normal;
   font-size: 1.75em;
-  padding-top: 1.5em;
-  padding-bottom: 1em;
+  padding-top: 0em;
+  padding-bottom: 0.5em;
   color: #000;
 }
 
@@ -175,9 +188,9 @@ h3 {
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.125em;
-  padding-top: 1em;
+  padding-top: 0em;
   padding-bottom: 0.25em;
   color: #444;
 }
@@ -235,20 +248,20 @@ a:hover {
 /*********/
 
 ul {
-  width: 100%;
-  text-align: right;
-}
-
-li {
-  display: inline;
+  padding-left: 1.1em;
+  padding-top: 1em;
 }
 
 nav ul {
+  text-align: right;
   list-style-type: none;
   overflow: hidden;
+  padding-left: 0em;
+  padding-top: 0em;
 }
 
 nav ul li {
+  display: inline;
   font-weight: bold;
 }
 
