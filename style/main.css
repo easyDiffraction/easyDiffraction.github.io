@@ -54,15 +54,14 @@ body {
 }
 
 .main {
-  min-height: calc(100% - 6em); /* minus header and footer heights */
+  min-height: calc(100% - 8em); /* minus header and footer heights */
   background-color: #f0f0f0;
   overflow: hidden;
 }
 
 header, footer {
-  height: 3em;
-  line-height: 3em;
-  font-size: 1.125em;
+  height: 4em;
+  line-height: 4em;
 }
 
 section {
@@ -136,21 +135,23 @@ article {
   line-height: 1.5em;
 }
 
-nav {
-  color: #fff;
-}
-
 code {
   display: inline-block;
   font-family: "Courier New", Courier, monospace;
   background: #f8f8f8;
   border: #eaeaea solid 1px;
   border-radius: 4px;
-  margin-left: -0.1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
   padding-left: 0.75em;
   padding-right: 0.75em;
+}
+
+.code-block {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 h1 {
@@ -213,6 +214,7 @@ h6 {
 
 p {
   font-size: 1.125em;
+  margin-top: 0.75em;
   color: #555;
 }
 
@@ -247,17 +249,27 @@ a:hover {
 /* Items */
 /*********/
 
+ol {
+  margin-top: -0.75em;
+  list-style-position: inside;
+  font-size: 1.125em;
+}
+
 ul {
-  padding-left: 1.1em;
-  padding-top: 1em;
+  margin-top: -0.75em;
+  list-style-position: inside;
+  font-size: 1.125em;
+}
+
+nav {
+  color: #fff;
 }
 
 nav ul {
   text-align: right;
   list-style-type: none;
   overflow: hidden;
-  padding-left: 0em;
-  padding-top: 0em;
+  margin: 0;
 }
 
 nav ul li {
