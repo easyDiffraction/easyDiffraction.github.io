@@ -36,47 +36,94 @@
       <!--- doc area --->
       <div class="doc-area">
         <section>
-          <article>
+
+          <div class="doc-chapter">
             <h1>3. How to Use</h1>
             <p>In this chapter we'll look at how to work with <b>easyDiffraction</b>.</p>
 
+            <div class="doc-section">
               <h2 id="3.2.-data-processing-workflow">3.2. Data processing workflow</a></h3>
               <p>This section describes all the steps in the data processing with <b>easyDiffraction</b>, starting form the opening of input data files and ending with exporting of calculated parameters.</p>
 
+              <div class="doc-subsection">
                 <h3 id="3.2.2.-experimental-data">3.2.2. Load experimental data</a></h3>
-                <p>Here you can see how to load the experimental data files.</p>
 
+                <div class="doc-subsubsection">
+                  <h4>Main window</h4>
+                  <p>The application's main window contains the following tabs:
+                    <ol>
+                      <li><code>Plot View</code> tab shows the experimental data plots.</li>
+                      <li><code>Table View</code> tab contains a table with the extracted data.</li>
+                      <li><code>Text View</code> tab displays the content of the data file.</li>
+                    </ol>
+                  </p>
+                  <p>An interaction with the plot is performed as follows:
+                    <ul>
+                      <li><b>Show coordinates</b>: Hover mouse pointer.</li>
+                      <li><b>Zoom in</b>: Left mouse button.</li>
+                      <li><b>Reset</b>: Right mouse button.</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Sidebar</h4>
+                  <p>The application's sidebar contains the following groups:
+                    <ul>
+                      <li><b>Data explorer</b>: Shows experimental data file name and directory.</li>
+                      <li><b>Instrument</b>: Contains information about neutron scattering instrument.</li>
+                      <li><b>Peak profile</b>: Contains information about peak profile.</li>
+                      <li><b>Misc</b>: Contains miscellaneous information.</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
                   <h4>Supported file formats</h4>
-                  <p>A typical powder diffraction data file is shown below.</p>
-                  <code>
-                  #wavelength 0.84<br>
-                  #field 1.0<br>
-                  # ttheta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IntUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sIntUP&nbsp;&nbsp;&nbsp;&nbsp;IntDOWN&nbsp;&nbsp;&nbsp;sIntDOWN<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;4.00&nbsp;&nbsp;465.80000&nbsp;&nbsp;128.97000&nbsp;&nbsp;301.88000&nbsp;&nbsp;129.30000<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;4.20&nbsp;&nbsp;323.78000&nbsp;&nbsp;118.22000&nbsp;&nbsp;206.06000&nbsp;&nbsp;120.00000<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;4.40&nbsp;&nbsp;307.14000&nbsp;&nbsp;115.90000&nbsp;&nbsp;230.47000&nbsp;&nbsp;116.53000<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;4.60&nbsp;&nbsp;172.13000&nbsp;&nbsp;115.84000&nbsp;&nbsp;236.52000&nbsp;&nbsp;113.74000<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;...
-                  </code>
-                  <ul>
-                    <li><b>wavelength</b>: Experimental neutron wavelength.</li>
-                    <li><b>field</b>: Applied magnetic field.</li>
-                    <li><b>ttheta</b>: Angular position of the Bragg peak.</li>
-                    <li><b>IntUP</b>: Intensity of the scattered beam of neutrons polarized with spin "UP".</li>
-                    <li><b>sIntUP</b>: Standard deviation of IntUP.</li>
-                    <li><b>IntDOWN</b>: Intensity of the scattered beam of neutrons polarized with spin "DOWN".</li>
-                    <li><b>sIntDOWN</b>: Standard deviation of IntDOWN.</li>
-                  </ul>
+                  <p>A typical powder diffraction data file is shown below.
+                    <code class=code-block>
+                      #wavelength 0.84<br>
+                      #field 1.0<br>
+                      # ttheta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IntUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sIntUP&nbsp;&nbsp;&nbsp;&nbsp;IntDOWN&nbsp;&nbsp;&nbsp;sIntDOWN<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;4.00&nbsp;&nbsp;465.80000&nbsp;&nbsp;128.97000&nbsp;&nbsp;301.88000&nbsp;&nbsp;129.30000<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;4.20&nbsp;&nbsp;323.78000&nbsp;&nbsp;118.22000&nbsp;&nbsp;206.06000&nbsp;&nbsp;120.00000<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;4.40&nbsp;&nbsp;307.14000&nbsp;&nbsp;115.90000&nbsp;&nbsp;230.47000&nbsp;&nbsp;116.53000<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;4.60&nbsp;&nbsp;172.13000&nbsp;&nbsp;115.84000&nbsp;&nbsp;236.52000&nbsp;&nbsp;113.74000<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;...
+                    </code>
+                    <ul>
+                      <li><b>wavelength</b>: Experimental neutron wavelength.</li>
+                      <li><b>field</b>: Applied magnetic field.</li>
+                      <li><b>ttheta</b>: Angular position of the Bragg peak.</li>
+                      <li><b>IntUP</b>: Intensity of scattered beam of neutrons polarized with spin "UP".</li>
+                      <li><b>sIntUP</b>: Standard deviation of IntUP.</li>
+                      <li><b>IntDOWN</b>: Intensity of scattered beam of neutrons polarized with spin "DOWN".</li>
+                      <li><b>sIntDOWN</b>: Standard deviation of IntDOWN.</li>
+                    </ul>
+                  </p>
+                </div>
 
+              </div>
+
+              <div class="doc-subsection">
                 <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
                 <p>Here you can see how to define sample model.</p>
+              </div>
 
+              <div class="doc-subsection">
                 <h3 id="3.2.4.-analysis">3.2.4. Perform data analysis</a></h3>
                 <p>Here you can see how to perform data analysis.</p>
+              </div>
 
+              <div class="doc-subsection">
                 <h3 id="3.2.5.-summary">3.2.5. Generate summary report</a></h3>
                 <p>Here you can see how to generate summary report.</p>
-          </article>
+              </div>
+
+            </div>
+
+          </div>
+
         </section>
       </div>
       <!--- doc area --->
