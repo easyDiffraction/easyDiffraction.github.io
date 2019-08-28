@@ -107,7 +107,68 @@
 
               <div class="doc-subsection">
                 <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
-                <p>Here you can see how to define sample model (to be completed).</p>
+
+                <div class="doc-subsubsection">
+                  <h4>Main window</h4>
+                  <p>The application's main window contains the following tabs:
+                    <ol>
+                      <li><code>Structure View</code> shows a 3D crystal structure model.</li>
+                      <li><code>Text View</code> displays the structure model in the CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>) format.</li>
+                    </ol>
+                  </p>
+                  <p>An interaction with the plot is performed as follows:
+                    <ul>
+                      <li><b>Rotate structure</b>: Drag with right mouse button pressed.</li>
+                      <li><b>Zoom in/out</b>: Turn the mouse wheel.</li>
+                      <li><b>Reset zoom and rotation</b>: Click left mouse button.</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Sidebar</h4>
+                  <p>The application's sidebar contains the following groups:
+                    <ul>
+                      <li><b>Structural phases</b> group shows the table of crystalline phases present in the sample. The parameters of the selected phase are given in the groups below.</li>
+                      <li><b>Symmetry and cell parameters</b> group contains information about space group <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html">crystal system</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html">number</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_name_H-M_alt.html">name</a> and setting, as well as unit cell <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html">lengths</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html">angles</a>.</li>
+                      <li><b>Atoms, atomic coordinates and occupations</b> group contains details about the atom sites, such as <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html">label</a>, color in the structure plot, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_fract_.html">coordinates</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_occupancy.html">occupancy</a>.</li>
+                      <li><b>Atomic displacement parameters</b>, also known as atomic vibration parameters or thermal parameters, are presented here.</li>
+                      <li><b>Magnetic susceptibility parameters</b>, or atomic site susceptibility tensor within local susceptibility approach, are given here.</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Supported file formats</h4>
+                  <p>An example of Crystallographic Information File (<a href="https://www.iucr.org/resources/cif">CIF</a>) is shown below. The full syntax can be found <a href="https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax">elsewhere</a>.
+                    <code class=code-block>
+                      data_phase_1<br>
+                      <br>
+                      _chemical_name_common                  'Fe3O4'<br>
+                      _cell_length_a                         8.56210<br>
+                      _cell_length_b                         8.56210<br>
+                      _cell_length_c                         8.56210<br>
+                      _cell_angle_alpha                      90<br>
+                      _cell_angle_beta                       90<br>
+                      _cell_angle_gamma                      90<br>
+                      _space_group_name_H-M_alt              'F d -3 m'<br>
+                      _space_group_IT_number                 227<br>
+                      <br>
+                      loop_<br>
+                        &nbsp;_atom_site_label<br>
+                        &nbsp;_atom_site_type_symbol<br>
+                        &nbsp;_atom_site_fract_x<br>
+                        &nbsp;_atom_site_fract_y<br>
+                        &nbsp;_atom_site_fract_z<br>
+                        &nbsp;_atom_site_occupancy<br>
+                        &nbsp;_atom_site_adp_type<br>
+                        &nbsp;_atom_site_B_iso_or_equiv<br>
+                        &nbsp;Fe3A            Fe       0.125000  0.125000  0.125000  1.0  Uiso  0.00000<br>
+                        &nbsp;Fe3B            Fe       0.500000  0.500000  0.500000  1.0  Uiso  0.00000<br>
+                        &nbsp;O1&nbsp;&nbsp;  O&nbsp;  0.255210  0.255210  0.255210  1.0  Uiso  0.00000<br>
+                    </code>
+                  </p>
+                </div>
               </div>
 
               <div class="doc-subsection">
