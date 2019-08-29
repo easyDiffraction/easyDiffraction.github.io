@@ -45,42 +45,58 @@
               <h2 id="3.2.-data-processing-workflow">3.2. Data processing workflow</a></h3>
               <p>This section describes all the steps in the data processing with <b>easyDiffraction</b>, starting from the opening of input data files and ending with saving the calculated parameters.</p>
 
+              <!-- doc-subsection -->
               <div class="doc-subsection">
-                <h3 id="3.2.2.-experimental-data">3.2.2. Load experimental data</a></h3>
-
-                <div class="doc-subsubsection">
-                  <h4>Main window</h4>
-                  <p>The application's main window contains the following tabs:
-                    <ol>
-                      <li><code>Plot View</code> shows the experimental data plots.</li>
-                      <li><code>Table View</code> contains a table with the extracted data.</li>
-                      <li><code>Text View</code> displays the content of the data file.</li>
-                    </ol>
-                  </p>
-                  <p>An interaction with the plot is performed as follows:
-                    <ul>
-                      <li><b>Show coordinates</b>: Hover mouse pointer over the data point.</li>
-                      <li><b>Zoom in</b>: Drag with left mouse button pressed.</li>
-                      <li><b>Reset zoom</b>: Click right mouse button.</li>
-                    </ul>
-                  </p>
-                </div>
-
-                <div class="doc-subsubsection">
-                  <h4>Sidebar</h4>
-                  <p>The application's sidebar contains the following groups:
-                    <ul>
-                      <li><b>Data explorer</b> shows experimental data file name and directory.</li>
-                      <li><b>Instrument</b> contains information about neutron scattering instrument.</li>
-                      <li><b>Peak profile</b> contains information about peak profile.</li>
-                      <li><b>Misc</b> contains miscellaneous information.</li>
-                    </ul>
-                  </p>
-                </div>
+                <h3 id="3.2.1.-project">3.2.1. Create/Open project</a></h3>
+                <p>All manipulations can be performed on the tab <code>Home</code></p>
 
                 <div class="doc-subsubsection">
                   <h4>Supported file formats</h4>
-                  <p>A typical polarized powder diffraction data file is shown below.
+                  <p>Currently, <b>easyDiffraction</b> allows to work with the RCIF file &mdash; an extended CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>). RCIF has the same syntax and logic as a pure CIF, but it also contains additional blocks discribing the instrument.</p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Application main window</h4>
+                  <p>The application's main window shows:
+                    <ul>
+                      <li>Project name</li>
+                      <li>Keywords</li>
+                      <li>Figures</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Application sidebar</h4>
+                  <p>The application's sidebar contains the following groups:
+                    <ul>
+                      <li><b>Get Started</b> group contains button to create, open, clone or save project. Currently, the only enabled button is <code>Open another project</code></li>
+                      <li><b>Recent Projects</b> group is currently disabled</a>.</li>
+                      <li><b>Examples</b> group is currently disabled</a>.</li>
+                      <li><b>Program Preferences</b> are presented here.</li>
+                    </ul>
+                  </p>
+                  <p>There are the following buttons at the very bottom of the sidebar:
+                    <ul>
+                      <li><code>Experimental Data</code> to go to the next step in the data processing.</li>
+                      <li><code>Save Current State</code> of the project (currently disabled).</li>
+                      <li><code>Get Online Help</code> for the current tab.</li>
+                      <li><code>Report a bug or issue</code> online.</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+              <!-- doc-subsection -->
+
+              <!-- doc-subsection -->
+              <div class="doc-subsection">
+                <h3 id="3.2.2.-experimental-data">3.2.2. Load experimental data</a></h3>
+                <p>All manipulations can be performed on the tab <code>Experimental Data</code></p>
+
+                <div class="doc-subsubsection">
+                  <h4>Supported file formats</h4>
+                  <p>Currently, <b>easyDiffraction</b> supports the polarized powder diffraction data only. An example of file format is shown below.
                     <code class=code-block>
                       #wavelength 0.84<br>
                       #field 1.0<br>
@@ -103,44 +119,56 @@
                   </p>
                 </div>
 
-              </div>
-
-              <div class="doc-subsection">
-                <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
-
                 <div class="doc-subsubsection">
-                  <h4>Main window</h4>
+                  <h4>Application main window</h4>
                   <p>The application's main window contains the following tabs:
                     <ol>
-                      <li><code>Structure View</code> shows a 3D crystal structure model.</li>
-                      <li><code>Text View</code> displays the structure model in the CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>) format.</li>
+                      <li><code>Plot View</code> shows the experimental data plots.</li>
+                      <li><code>Table View</code> contains a table with the extracted data.</li>
+                      <li><code>Text View</code> displays the content of the data file.</li>
                     </ol>
                   </p>
                   <p>An interaction with the plot is performed as follows:
                     <ul>
-                      <li><b>Rotate structure</b>: Drag with right mouse button pressed.</li>
-                      <li><b>Zoom in/out</b>: Turn the mouse wheel.</li>
-                      <li><b>Reset zoom and rotation</b>: Click left mouse button.</li>
+                      <li><b>Show coordinates</b>: Hover mouse pointer over the data point.</li>
+                      <li><b>Zoom in</b>: Drag with left mouse button pressed.</li>
+                      <li><b>Reset zoom</b>: Click right mouse button.</li>
                     </ul>
                   </p>
                 </div>
 
                 <div class="doc-subsubsection">
-                  <h4>Sidebar</h4>
+                  <h4>Application sidebar</h4>
                   <p>The application's sidebar contains the following groups:
                     <ul>
-                      <li><b>Structural phases</b> group shows the table of crystalline phases present in the sample. The parameters of the selected phase are given in the groups below.</li>
-                      <li><b>Symmetry and cell parameters</b> group contains information about space group <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html">crystal system</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html">number</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_name_H-M_alt.html">name</a> and setting, as well as unit cell <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html">lengths</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html">angles</a>.</li>
-                      <li><b>Atoms, atomic coordinates and occupations</b> group contains details about the atom sites, such as <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html">label</a>, color in the structure plot, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_fract_.html">coordinates</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_occupancy.html">occupancy</a>.</li>
-                      <li><b>Atomic displacement parameters</b>, also known as atomic vibration parameters or thermal parameters, are presented here.</li>
-                      <li><b>Magnetic susceptibility parameters</b>, or atomic site susceptibility tensor within local susceptibility approach, are given here.</li>
+                      <li><b>Data explorer</b> shows experimental data file name and directory.</li>
+                      <li><b>Instrument</b> contains information about neutron scattering instrument.</li>
+                      <li><b>Peak profile</b> contains information about peak profile.</li>
+                      <li><b>Misc</b> contains miscellaneous information.</li>
+                    </ul>
+                  </p>
+                  <p>There are the following buttons at the very bottom of the sidebar:
+                    <ul>
+                      <li><code>Home</code> to go to the previous step in the data processing.</li>
+                      <li><code>Sample Model</code> to go to the next step in the data processing.</li>
+                      <li><code>Save Current State</code> of the project (currently disabled).</li>
+                      <li><code>Get Online Help</code> for the current tab.</li>
+                      <li><code>Report a bug or issue</code> online.</li>
                     </ul>
                   </p>
                 </div>
+
+              </div>
+              <!-- doc-subsection -->
+
+              <!-- doc-subsection -->
+              <div class="doc-subsection">
+                <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
+                <p>All manipulations can be performed on the tab <code>Sample Model</code></p>
 
                 <div class="doc-subsubsection">
                   <h4>Supported file formats</h4>
-                  <p>An example of Crystallographic Information File (<a href="https://www.iucr.org/resources/cif">CIF</a>) is shown below. The full syntax can be found <a href="https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax">elsewhere</a>.
+                  <p>Currently, the structural model is taken from the RCIF file, where it is described in the same way as in pure CIF. An example is shown below. The full syntax can be found <a href="https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax">elsewhere</a>.
                     <code class=code-block>
                       data_phase_1<br>
                       <br>
@@ -169,17 +197,62 @@
                     </code>
                   </p>
                 </div>
-              </div>
 
+                <div class="doc-subsubsection">
+                  <h4>Application main window</h4>
+                  <p>The application's main window contains the following tabs:
+                    <ol>
+                      <li><code>Structure View</code> shows a 3D crystal structure model.</li>
+                      <li><code>Text View</code> displays the structure model in the CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>) format.</li>
+                    </ol>
+                  </p>
+                  <p>An interaction with the plot is performed as follows:
+                    <ul>
+                      <li><b>Rotate structure</b>: Drag with right mouse button pressed.</li>
+                      <li><b>Zoom in/out</b>: Turn the mouse wheel.</li>
+                      <li><b>Reset zoom and rotation</b>: Click left mouse button.</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div class="doc-subsubsection">
+                  <h4>Application sidebar</h4>
+                  <p>The application's sidebar contains the following groups:
+                    <ul>
+                      <li><b>Structural phases</b> group shows the table of crystalline phases present in the sample. The parameters of the selected phase are given in the groups below.</li>
+                      <li><b>Symmetry and cell parameters</b> group contains information about space group <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html">crystal system</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html">number</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_name_H-M_alt.html">name</a> and setting, as well as unit cell <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html">lengths</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html">angles</a>.</li>
+                      <li><b>Atoms, atomic coordinates and occupations</b> group contains details about the atom sites, such as <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html">label</a>, color in the structure plot, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_fract_.html">coordinates</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_occupancy.html">occupancy</a>.</li>
+                      <li><b>Atomic displacement parameters</b>, also known as atomic vibration parameters or thermal parameters, are presented here.</li>
+                      <li><b>Magnetic susceptibility parameters</b>, or atomic site susceptibility tensor within local susceptibility approach, are given here.</li>
+                    </ul>
+                  </p>
+                  <p>There are the following buttons at the very bottom of the sidebar:
+                    <ul>
+                      <li><code>Experimental Data</code> to go to the previous step in the data processing.</li>
+                      <li><code>Analysis</code> to go to the next step in the data processing.</li>
+                      <li><code>Save Current State</code> of the project (currently disabled).</li>
+                      <li><code>Get Online Help</code> for the current tab.</li>
+                      <li><code>Report a bug or issue</code> online.</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+              <!-- doc-subsection -->
+
+              <!-- doc-subsection -->
               <div class="doc-subsection">
                 <h3 id="3.2.4.-analysis">3.2.4. Perform data analysis</a></h3>
                 <p>Here you can see how to perform data analysis (to be completed).</p>
               </div>
+              <!-- doc-subsection -->
 
+              <!-- doc-subsection -->
               <div class="doc-subsection">
                 <h3 id="3.2.5.-summary">3.2.5. Generate summary report</a></h3>
                 <p>Here you can see how to generate summary report (to be completed).</p>
               </div>
+              <!-- doc-subsection -->
 
             </div>
 
