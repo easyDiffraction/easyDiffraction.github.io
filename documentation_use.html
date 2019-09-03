@@ -270,14 +270,108 @@
               <!-- doc-subsection -->
               <div class="doc-subsection">
                 <h3 id="3.2.4.-analysis">3.2.4. Perform data analysis</a></h3>
-                <p>Here you can see how to perform data analysis (to be completed).</p>
+                <p>Data analysis is performed in the tab <code>Analysis</code>.</p>
+
+                <div class="doc-subsubsection">
+                  <h4>Application main window</h4>
+                  <p>The application's main window contains the following tabs:
+                    <ol>
+                      <li><code>Fitting</code> shows plot of the data and model using current parameters.</li>
+                      <li><code>Constraints</code> contains a table with parameter constraints.</li>
+                      <li><code>Text View (RCIF)</code> display the contents of the RCIF file.</li>
+                    </ol>
+                  </p>
+                  <p>An interaction with the plot shown in the <code>Fitting</code> tab is performed as follows:
+                    <ul>
+                      <li><b>View data point</b>: Hover mouse over data point.</li>
+                      <li><b>Zoom in</b>: Hold left click and drag a box over desired area.</li>
+                      <li><b>Reset view</b>: Right mouse button.</li>
+                    </ul>
+                  </p>
+                  <p>An interaction with the table shown in the <code>Constraints</code> tab is performed as follows:
+                    <ul>
+                      <li><b>Select parameter to lock</b>: Choose from drop down in group and parameter.</li>
+                      <li><b>Select parameter to constrain to</b>: Choose from drop down in group and parameter.</li>
+                    </ul>
+                  </p>
+                </div>
+                <!-- doc-subsubsection -->
+
+                <div class="doc-subsubsection">
+                  <h4>Application sidebar</h4>
+                  <p>Each of the tabs of the main window have independent sidebar options.</p>
+
+                  <p>The <code>Fitting</code> sidebar contains the following elements:
+                    <ul>
+                      <li><b>Parameters</b> group shows the table of parameters. Limits and starting values are shown, along with a checkbox for selecting the variable for fitting (limits not implemented yet).</li>
+                      <li><b>Start/Stop fitting</b> button that initiates and stops fitting.</li>
+                      <li><b>Accept refined parameters</b> button (not implemented yet).</li>
+                    </ul>
+                  </p>
+                  <p>The <code>Constraints</code> sidebar contains the following elements:
+                    <ul>
+                      <li><b>Add/remove constraints</b> Holds button for adding new constraint and deleting all constraints (both currently disabled).</li>
+                    </ul>
+                  </p>
+                  <p>The <code>Text View (RCIF)</code>
+                    <ul>
+                      <li><b>Find</b> Search in the RCIF file (currently disabled).</li>
+                    </ul>
+                  </p>
+                  <p>There are the following buttons at the very bottom of the sidebar of each tab:
+                    <ul>
+                      <li><code>Sample Model</code> to go to the previous step in the data processing.</li>
+                      <li><code>Summary</code> to go to the next step in the data processing.</li>
+                      <li><code>Save Current State</code> of the project (currently disabled).</li>
+                      <li><code>Get Online Help</code> for the current tab.</li>
+                      <li><code>Report a bug or issue</code> online.</li>
+                    </ul>
+                  </p>
+
+                </div>
+                <!-- doc-subsubsection -->
               </div>
               <!-- doc-subsection -->
 
               <!-- doc-subsection -->
               <div class="doc-subsection">
                 <h3 id="3.2.5.-summary">3.2.5. Generate summary report</a></h3>
-                <p>Here you can see how to generate summary report (to be completed).</p>
+                <p>Here you can view the summary report.</p>
+
+                <div class="doc-subsubsection">
+                  <h4>Application main window</h4>
+                  <p>The application's main window contains the following tabs:
+                    <ol>
+                      <li><code>Report</code> shows the report for the performed data analysis.</li>
+                    </ol>
+                  </p>
+                  <p>The report contains the following:
+                    <ul>
+                      <li><b>Parameters</b> displays table with all parameters .</li>
+                      <li><b>Fitting</b> shows plot of data and model with current parameters.</li>
+                      <li><b>Structure</b> contains 3D view of structure.</li>
+                    </ul>
+                  </p>
+                </div>
+                <!-- doc-subsubsection -->
+                <div class="doc-subsubsection">
+                  <h4>Application sidebar</h4>
+                  <p>The application's sidebar contains the following elements:
+                    <ul>
+                      <li><b>Export elements</b> has checkboxes for each element in the report to select those that should be exported (currently disabled).</li>
+                      <li><b>Export as...</b> contans export button, field for custom report name and drop down mennu for file format (currently disabled).</li>
+                    </ul>
+                  </p>
+                  <p>There are the following buttons at the very bottom of the sidebar of each tab:
+                    <ul>
+                      <li><code>Analysis</code> to go to the previous step in the data processing.</li>
+                      <li><code>Save Current State</code> of the project (currently disabled).</li>
+                      <li><code>Get Online Help</code> for the current tab.</li>
+                      <li><code>Report a bug or issue</code> online.</li>
+                    </ul>
+                  </p>
+                </div>
+                <!-- doc-subsubsection -->
               </div>
               <!-- doc-subsection -->
 
