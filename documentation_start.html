@@ -1,62 +1,214 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset="UTF-8">
-    <link href="style/main.css" rel="stylesheet">
-    <link href="style/documentation.css" rel="stylesheet">
-    <link href="icons/easydiffraction.ico" rel="shortcut icon" type="image/x-icon">
-    <title>easyDiffraction User Manual</title>
-  </head>
-  <!--- HEAD --->
-
-  <!--- BODY --->
-  <body>
-
-    <!--- header with navigation --->
-    <header>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="index.html"><img src="icons/easydiffraction.svg">easyDiffraction</a></li>
-            <li><a href="documentation.html"><img src="icons/book-reader.svg">Documentation</a></li>
-            <li><a href="https://github.com/easyDiffraction/easyDiffraction"><img src="icons/github.svg">GitHub</a></li>
-            <li><a href="https://github.com/easyDiffraction/easyDiffraction/issues"><img src="icons/bug.svg">Issues</a></li>
-            <li><a href="contact.html"><img src="icons/envelope.svg">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
-    <!--- header with navigation --->
-
-    <!--- main --->
-    <div class="main">
-
-      <!--- doc area --->
-      <div class="doc-area">
-        <section>
-          <article>
-            <h1>2. Getting Started</h1>
-          </article>
-        </section>
-      </div>
-      <!--- doc area --->
-
-    </div>
-    <!--- main --->
-
-    <!--- footer with navigation --->
-    <footer>
-      <section>
-        <nav>
-          <ul>
-            <li>2019 • <a href="index.html">easyDiffraction</a></li>
-          </ul>
-        </nav>
-      </section>
-    </footer>
-    <!--- footer with navigation --->
-
+    
+    <!--- HEAD --->
+    <head>
+        <meta charset="UTF-8">
+        <link href="style/main.css" rel="stylesheet">
+        <link href="style/documentation.css" rel="stylesheet">
+        <link href="icons/easydiffraction.ico" rel="shortcut icon" type="image/x-icon">
+        <title>easyDiffraction User Manual</title>
+    </head>
+    <!--- HEAD --->
+    
     <!--- BODY --->
+    <body>
+        
+        <!--- header with navigation --->
+        <header>
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><img src="icons/easydiffraction.svg">easyDiffraction</a></li>
+                        <li><a href="documentation.html"><img src="icons/book-reader.svg">Documentation</a></li>
+                        <li><a href="https://github.com/easyDiffraction/easyDiffraction"><img src="icons/github.svg">GitHub</a></li>
+                        <li><a href="https://github.com/easyDiffraction/easyDiffraction/issues"><img src="icons/bug.svg">Issues</a></li>
+                        <li><a href="contact.html"><img src="icons/envelope.svg">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <!--- header with navigation --->
+        
+        <!--- main --->
+        <div class="main">
+            
+            <!--- doc area --->
+            <div class="doc-area">
+                <section>
+                    
+                    <!--- chapter --->
+                    <div class="doc-chapter">
+                        <h1 id="2.-getting-started">2. Getting Started</h1>
+                        <p>This chapter is about getting started with <b>easyDiffraction</b>.</p>
+                        
+                        <!--- section --->
+                        <div class="doc-section">
+                            <h2 id="2.1.-installing-easydiffraction">2.1. Installing easyDiffraction</h2>
+                            <p>easyDiffraction works across operating systems. You can download precompiled binaries of <b>easyDiffraction Installer</b> for <b>macOS</b>, <b>Windows</b> and <b>Linux (soon)</b> operating systems, or you can get the source code and build the program yourself.</p>
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Windows</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Visit the <a href="http://easyDiffraction.github.io/">easyDiffraction download page.</a></li>
+                                        <li>Choose <b>Download for Windows.</b></li>
+                                        <li>Unzip the downloaded <b>easyDiffractionInstaller</b> zip file.</li>
+                                        <li>Double-click <b>easyDiffractionInstaller.exe</b> and follow the instructions given by the installer.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>macOS</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Visit the <a href="http://easyDiffraction.github.io/">easyDiffraction download page.</a></li>
+                                        <li>Choose <b>Download for macOS</b>.</li>
+                                        <li>Unzip the downloaded <b>easyDiffractionInstaller</b> zip file.</li>
+                                        <li>Click <b>easyDiffractionInstaller.app</b> and follow the instructions given by the installer.</li>
+                                        <li>If you see the message <i>"easyDiffractionInstaller.app can't be opened because it is from an unidentified developer"</i>, do the following:</li>
+                                        <ul>
+                                            <li>In the <b>Finder</b>, locate the <b>easyDiffractionInstaller.app</b></li>
+                                            <li>Control-click the app icon, then choose Open from the shortcut menu.</li>
+                                            <li>Click Open.</li>
+                                            <li>The app is saved as an exception to your security settings, and you can open it in the future by double-clicking it just as you can any registered app. More details at <a href="https://support.apple.com/kb/PH25088">https://support.apple.com/kb/PH25088</a></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Linux</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Visit the <a href="http://easyDiffraction.github.io/">easyDiffraction download page.</a></li>
+                                        <li>Choose <b>Download for Linux</b>.</li>
+                                        <li>Unzip the downloaded <b>easyDiffractionInstaller</b> zip file.</li><li>Double-click <b>easyDiffractionInstaller</b> and follow the instructions given by the installer.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                        </div>
+                        <!--- section --->
+                        
+                        <!--- section --->
+                        <div class="doc-section">
+                            <h2 id="2.2.-launching-easydiffraction">2.2. Launching easyDiffraction</h2>
+                            <p>After the program has been installed, you can run the graphical user interface version of <b>easyDiffraction</b>.</p>
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Windows</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Double-click the <b>easyDiffraction</b> icon on the <b>Desktop</b> or</li>
+                                        <li>Select <b>easyDiffraction</b> from the <b>Start Menu</b> or</li>
+                                        <li>Navigate to the installation folder with <b>Windows Explorer</b> and double-click <b>easyDiffraction.exe</b>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>macOS</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Double-click the <b>easyDiffraction</b> icon on the <b>Launchpad</b> or</li>
+                                        <li>Navigate to the installation folder with <b>Finder</b> and double-click <b>easyDiffraction.app</b>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Linux</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Double-click the <b>easyDiffraction</b> icon on the <b>Desktop</b> or</li>
+                                        <li>Navigate to the installation folder with file manager and double-click <b>easyDiffraction</b>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                        </div>
+                        <!--- section --->
+                        
+                        <!--- section --->
+                        <div class="doc-section">
+                            <h2 id="2.3.-uninstalling-easydiffraction">2.3. Uninstalling easyDiffraction</h2>
+                            <p>You can uninstall <b>easyDiffraction</b> from <b>macOS</b>, <b>Windows</b> or <b>Linux</b> any time.</p>
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Windows</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Open <b>Windows Explorer</b> and navigate to the folder containing installed <b>easyDiffraction</b>.</li>
+                                        <li>Double-click <b>easyDiffractionUninstaller.exe</b> and follow the instructions given by the uninstaller.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>macOS</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Open <b>Finder</b> and navigate to the folder containing installed <b>easyDiffraction</b>.</li>
+                                        <li>Click <b>easyDiffractionUninstaller.app</b> and follow the instructions given by the uninstaller.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                            <!--- sub-sub-section --->
+                            <div class="doc-subsubsection">
+                                <h4>Linux</h4>
+                                <div class="instructions">
+                                    <ul>
+                                        <li>Open file manager and navigate to the folder containing installed <b>easyDiffraction</b>.</li>
+                                        <li>Click <b>easyDiffractionUninstaller</b> and follow the instructions given by the uninstaller.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--- sub-sub-section --->
+                            
+                        </div>
+                        <!--- section --->
+                        
+                    </div>
+                    <!--- chapter --->
+
+                </section>
+            </div>
+            <!--- doc area --->
+            
+        </div>
+        <!--- main --->
+        
+        <!--- footer with navigation --->
+        <footer>
+            <section>
+                <nav>
+                    <ul>
+                        <li>2019 • <a href="index.html">easyDiffraction</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+        <!--- footer with navigation --->
+        
+        <!--- BODY --->
     </body>
 </html>
