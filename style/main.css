@@ -51,6 +51,7 @@ html {
 
 body {
   height: 100%;
+  line-height: 1.5em;
 }
 
 .main {
@@ -155,6 +156,19 @@ code {
   padding-bottom: 0.5em;
 }
 
+.instructions {
+  display: block;
+  background: #f8f8f8;
+  border: #eaeaea solid 1px;
+  border-radius: 4px;
+  margin-top: 0em;
+  margin-bottom: 0.75em;
+  padding-top: 1.5em;
+  padding-bottom: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 h1 {
   font-weight: normal;
   font-size: 3.0em;
@@ -214,7 +228,7 @@ h6 {
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1em;
   margin-top: 0.75em;
   color: #555;
 }
@@ -253,13 +267,19 @@ a:hover {
 ol {
   margin-top: -0.75em;
   margin-left: 1.4em; /* list-style-position: inside; */
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 ul {
   margin-top: -0.75em;
   margin-left: 1.1em; /* list-style-position: inside; */
-  font-size: 1.125em;
+  font-size: 1em;
+}
+
+ul ul {
+  padding-top: 1em;
+  padding-left: 0em;
+    font-size: 1em;
 }
 
 nav {
