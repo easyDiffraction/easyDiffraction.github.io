@@ -111,6 +111,8 @@
   margin-left: -20em;
 }
 
+@media screen and (max-width: 1450px) { .row .toc-area { visibility: hidden; } }
+
 .row .toc-area h2 {
   font-weight: normal;
   font-size: 1em;
