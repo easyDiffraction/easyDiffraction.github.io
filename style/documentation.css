@@ -79,6 +79,14 @@
   margin-bottom: 3em;
 }
 
+.toc-area section article {
+  margin-top: 2em;
+}
+
+.toc-area section article + article {
+  margin-top: 1em;
+}
+
 .toc-area h2 {
   font-weight: normal;
   font-size: 1.75em;
@@ -106,9 +114,12 @@
   /*width: 30%;*/
   position: fixed;
   float: left;
-  margin-top: 0em;
-  width: 20em;
+  margin-top: 2.5em;
   margin-left: -20em;
+  padding: 1em;
+  background: #f8f8f8;
+  border: #eaeaea solid 1px;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 1450px) { .row .toc-area { visibility: hidden; } }
