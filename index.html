@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-    
+
     <!--- HEAD --->
     <head>
         <meta charset="UTF-8">
         <link href="style/main.css" rel="stylesheet">
         <link href="style/index.css" rel="stylesheet">
+        <link href="style/slideshow.css" rel="stylesheet">
         <link href="icons/easydiffraction.ico" rel="shortcut icon" type="image/x-icon">
         <title>easyDiffraction</title>
     </head>
     <!--- HEAD --->
-    
+
     <!--- BODY --->
     <body>
-        
+
         <!--- header with navigation --->
         <header>
             <section>
@@ -28,22 +29,22 @@
             </section>
         </header>
         <!--- header with navigation --->
-        
+
         <!--- main --->
         <div class="main">
-            
+
             <!--- intro area --->
             <div class="intro-area">
-                
+
                 <!--- logo area --->
                 <div class="logo-area">
-                    <section>
-                        <img src="images/easydiffraction-logo.svg">
-                            <img src="images/easydiffraction-text.svg">
-                                </section>
+                  <section>
+                    <img src="images/easydiffraction-logo.svg">
+                    <img src="images/easydiffraction-text.svg">
+                  </section>
                 </div>
                 <!--- logo area --->
-                
+
                 <!--- motto area --->
                 <div class="motto-area">
                     <section>
@@ -51,7 +52,7 @@
                     </section>
                 </div>
                 <!--- motto area --->
-                
+
                 <!--- prototype area --->
                 <div class="prototype-area">
                     <section>
@@ -59,7 +60,7 @@
                     </section>
                 </div>
                 <!--- prototype area --->
-                
+
                 <!--- download area --->
                 <div class="download-area">
                     <section>
@@ -84,44 +85,76 @@
                     </section>
                 </div>
                 <!--- download area --->
-                
+
                 <!--- screenshot area --->
                 <div class="screenshot-area">
                     <section>
-                        <figure><img src="images/easydiffraction-screenshot.png"></figure>
+                      <!---
+                      <figure><img class="slide" src="images/ed-home.png"></figure>
+                      <figure><img class="slide" src="images/ed-experiment.png"></figure>
+                      <figure><img class="slide" src="images/ed-sample.png"></figure>
+                      --->
+                      <figure><img src="images/ed-analysis.png"></figure>
+                      <!---
+                      <figure><img class="slide" src="images/ed-summary.png"></figure>
+                      --->
                     </section>
                 </div>
                 <!--- screenshot area --->
-                
+
                 <!--- description area --->
                 <div class="description-area">
                     <section>
-                        <p><b>easyDiffraction</b> is a scientific software for modelling and analysis of the neutron diffraction data, namely simulation of diffraction pattern based on structural models and refinement of their parameters. It is similar to other crystallographic programs such as FullProf, Jana,&nbsp;ShelX,&nbsp;GSAS,&nbsp;etc.</p>
+                        <p><b>easyDiffraction</b> is a scientific software for modelling and analysis of the neutron diffraction data, e.g., simulation of diffraction pattern based on structural model and refinement of its parameters. <b>easyDiffraction</b> is similar to crystallographic programs like FullProf, Jana,&nbsp;GSAS,&nbsp;ShelX,&nbsp;etc. However, unlike them, <b>easyDiffraction</b> is based on various external crystallographic libraries, such as CrysPy (more will be added soon) to cover different functionality within the single intuitive and user-friendly graphical interface. <a href="documentation_intro.html#1.1.-what-is-easydiffraction-for?">Learn more</a></p>
                     </section>
                 </div>
                 <!--- description area --->
-                
+
                 <!--- features area --->
                 <div class="features-area">
                     <section>
-                        <article>
-                            <h3>Cross-platform</h3>
-                            <p>easyDiffraction works across operating systems: Mac, Windows, or Linux (Ubuntu).</p>
-                        </article>
-                        <article>
-                            <h3>Easy to use</h3>
-                            <p>Intuitive tabbed interface helps to speed up the diffraction data modelling and analysis.</p>
-                        </article>
+                      <article>
+                          <h3>Free and open-source</h3>
+                          <p>Anyone is freely licensed to use easyDiffraction and the source code is openly shared on GitHub.<br><a href="documentation_intro.html#1.2.-free-and-open-source">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Cross-platform</h3>
+                          <p>easyDiffraction works across operating systems: macOS, Windows, or Linux (Ubuntu).<br><a href="documentation_intro.html#1.2.-cross-platform">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Multi-functional</h3>
+                          <p>easyDiffraction integrates existing crystallographic libraries, such as CrysPy (more will be added soon), to cover different functionality.<br><a href="documentation_intro.html#1.2.-multi-functional">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Everything is included</h3>
+                          <p>easyDiffraction is distributed as an all-in-one package that has no external dependencies and can be installed with only a few clicks.<br><a href="documentation_intro.html#1.2.-everything-is-included">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Easy to use</h3>
+                          <p>Intuitive tabbed interface with build-in step-by-step user guides, and a clear workflow help to speed up the data modelling and analysis.<br><a href="documentation_intro.html#1.2.-easy-to-use">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Live update of calculations</h3>
+                          <p>You can modify any parameter manually or using slider, and the simulated curve is automatically recalculated in real time.<br><a href="documentation_intro.html#1.2.-live-update">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>Various techniques</h3>
+                          <p>We just started with classical 1D polarized neutron powder diffraction at constant wavelength. Unpolarized, single-crystal, 2D, Time-of-Flight, and so on, will be covered later.<br><a href="documentation_intro.html#1.2.-various-techniques">Learn more</a></p>
+                      </article>
+                      <article>
+                          <h3>CIF-based project format</h3>
+                          <p>Human-readable data format CIF (Crystallographic Information File) is used for the project according to the specs of International Union of Crystallography, where possible.<br><a href="documentation_intro.html#1.2.-cif-based-format">Learn more</a></p>
+                      </article>
                     </section>
                 </div>
                 <!--- features area --->
-                
+
             </div>
             <!--- intro area --->
-            
+
         </div>
         <!--- main --->
-        
+
         <!--- footer with navigation --->
         <footer>
             <section>
@@ -133,7 +166,34 @@
             </section>
         </footer>
         <!--- footer with navigation --->
-        
+
+        <!--- slideshow --->
+        <!---
+        <script>
+        let currentIndex = 0
+        carousel()
+
+        function carousel() {
+          let slide = document.getElementsByClassName("slide")
+          // hide all slides
+          for (let i = 0; i < slide.length; i++) {
+            slide[i].classList.remove('active')
+          }
+          // get to next slide, if last - go to first
+          currentIndex++
+          if (currentIndex > slide.length - 1) {
+            currentIndex = 0
+          }
+          // display new slide
+          slide[currentIndex].classList.add('active')
+
+          // call itself again
+          setTimeout(carousel, 5000)
+        }
+        </script>
+        --->
+        <!--- slideshow --->
+
         <!--- BODY --->
     </body>
 </html>
