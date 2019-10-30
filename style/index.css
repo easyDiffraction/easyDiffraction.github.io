@@ -112,7 +112,7 @@ body header { /* reimplement main.css */
   line-height: 1.5em;
 }
 
-.description-area section p a, a:visited {
+.description-area section p a, .description-area section p a:visited {
   font-size: 0.85em;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -126,7 +126,7 @@ body header { /* reimplement main.css */
   display: inline-block;
 }
 
-.description-area section p a:hover, a:active {
+.description-area section p a:hover, .description-area section p a:active {
   background-color: #009fee;
   border-color: #ddd;
   color: white
@@ -165,7 +165,7 @@ body header { /* reimplement main.css */
   margin-top: 0em;
 }
 
-.features-area section article p a, a:visited {
+.features-area section article p a, .features-area section article p a:visited {
   display: inline-block;
   font-size: 0.85em;
   padding-left: 1ex;
@@ -175,7 +175,7 @@ body header { /* reimplement main.css */
   border-radius: 4px;
 }
 
-.features-area section article p a:hover, a:active {
+.features-area section article p a:hover, .features-area section article p a:active {
   background-color: #009fee;
   border-color: #eaeaea;
   color: white
