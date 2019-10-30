@@ -149,7 +149,6 @@ section {
   clear: both;
 }
 
-
 article {
   font-size: 1em;
   line-height: 1.5em;
@@ -274,9 +273,12 @@ b {
 /* Links */
 /*********/
 
+a {
+  text-decoration: none;
+}
+
 a, a:visited {
   color: #008bd0;
-  text-decoration: none;
 }
 
 a:hover {
@@ -321,9 +323,8 @@ nav ul li {
   font-weight: bold;
 }
 
-nav ul li a {
+nav ul li a, a:visited {
   color: white;
-  text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {

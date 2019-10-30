@@ -166,17 +166,13 @@ body header { /* reimplement main.css */
 }
 
 .features-area section article p a, a:visited {
+  display: inline-block;
   font-size: 0.85em;
-  margin-top: -1px;
-  margin-bottom: -1px;
   padding-left: 1ex;
   padding-right: 1ex;
+  background-color: #f8f8f8;
   border: #eaeaea solid 1px;
   border-radius: 4px;
-  background-color: #f8f8f8;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .features-area section article p a:hover, a:active {
