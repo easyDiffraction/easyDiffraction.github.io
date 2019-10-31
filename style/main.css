@@ -368,6 +368,11 @@ footer ul {
   text-align: center;
 }
 
+footer ul li {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
 /***********/
 /* Images  */
 /***********/
