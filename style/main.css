@@ -327,21 +327,27 @@ nav ul li {
 }
 
 nav ul li a, nav ul li a:visited {
-  color: white;
+  color: #b7b7b7;
 }
 
 nav ul li a.active {
-  color: #b7b7b7;
-}
-nav ul li a.active > img {
-  filter: invert(100%) opacity(50%);
+  color: white;
 }
 
 nav ul li a:hover:not(.active) {
-  color: #b7b7b7;
+  color: white;
 }
+
+nav ul li a > img {
+  filter: invert(100%) opacity(60%);
+}
+
+nav ul li a.active > img {
+  filter: invert(100%) opacity(90%);
+}
+
 nav ul li a:hover:not(.active) > img { /* change "img" when hover "a" */
-  filter: invert(100%) opacity(50%);
+  filter: invert(100%) opacity(90%);
 }
 
 header ul li {
