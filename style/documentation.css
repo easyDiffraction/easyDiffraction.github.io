@@ -12,10 +12,12 @@
   margin-bottom: 0;
 }
 
+/* doc-section */
+
 .doc-section { /* h2 */
 }
 .doc-section h2 {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0;
 }
 .doc-section p {
@@ -23,23 +25,87 @@
   margin-bottom: 0;
 }
 
+.doc-section img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.doc-section article {
+  display: inline-grid;
+  grid-template-areas:
+    'icon header'
+    'icon paragraph'
+    'icon figure';
+  grid-gap: 0em;
+  margin-top: 1.5em;
+}
+
+.doc-section article + article {
+  margin-top: 0.5em;
+}
+
+.doc-section article img {
+  grid-area: icon;
+  width: 2em;
+  height: auto;
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+  margin-right: 1em;
+}
+
+.doc-section article h5 {
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+}
+
+.doc-section article p {
+  grid-area: paragraph;
+  margin: 0;
+  margin-top: 0.25em;
+  padding: 0;
+}
+
+.doc-section article figure img {
+  grid-area: figure;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: -0.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bbb;
+  border-radius: 5px;
+}
+
+/* doc-subsection */
+
 .doc-subsection { /* h3 */
 }
+
 .doc-subsection h3 {
   margin-top: 0.5em;
   margin-bottom: 0;
 }
+
 .doc-subsection p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
+/* doc-subsubsection */
+
 .doc-subsubsection { /* h4 */
 }
+
 .doc-subsubsection h4 {
   margin-top: 0.5em;
   margin-bottom: 0;
 }
+
 .doc-subsubsection p {
   margin-top: 0.75em;
   margin-bottom: 0;
