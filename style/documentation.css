@@ -77,8 +77,12 @@
   margin-top: -0.5em;
   border-style: solid;
   border-width: 1px;
-  border-color: #bbb;
-  border-radius: 5px;
+  border-color: #d5d5d5;
+  border-radius: 3px;
+}
+
+.doc-section article figure img + img {
+  margin-top: 0.75em;
 }
 
 /* doc-subsection */
