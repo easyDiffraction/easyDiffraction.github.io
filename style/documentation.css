@@ -7,22 +7,31 @@
   margin-top: 0.5em;
   margin-bottom: 0;
 }
-.doc-chapter p {
-  margin-top: 0;
+
+.doc-chapter article {
+  margin-top: 1.5em;
   margin-bottom: 0;
 }
 
 /* doc-section */
 
 .doc-section { /* h2 */
+  margin-top: -3em;
+  padding-top: 3em;
 }
+
 .doc-section h2 {
   margin-top: 1em;
   margin-bottom: 0;
 }
+
 .doc-section p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.doc-section a {
+  display: inline-block;
 }
 
 .doc-section img {
@@ -39,11 +48,12 @@
     'icon paragraph'
     'icon figure';
   grid-gap: 0em;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 .doc-section article + article {
-  margin-top: 0.5em;
+  margin-top: -3em;
+  padding-top: 6em;
 }
 
 .doc-section article img {
@@ -61,12 +71,44 @@
   padding: 0;
 }
 
-.doc-section article p {
+.doc-section article .paragraph {
   grid-area: paragraph;
   margin: 0;
-  margin-top: 0.25em;
+  margin-top: 0.5em;
   padding: 0;
 }
+
+.doc-section article .paragraph p {
+  margin-top: 0.5em;
+}
+
+.doc-section article .paragraph p + p {
+  margin-top: 1em;
+}
+
+.doc-section article .paragraph p + ul {
+  margin-top: -0.5em;
+}
+
+.doc-section article .paragraph ul + p {
+  margin-top: 1em;
+}
+
+.doc-section article p br {
+  content: " ";
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/*
+.doc-section article video {
+  grid-area: video;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+*/
 
 .doc-section article figure img {
   grid-area: figure;
@@ -74,7 +116,7 @@
   height: auto;
   margin: 0;
   padding: 0;
-  margin-top: -0.5em;
+  margin-bottom: 1.5em;
   border-style: solid;
   border-width: 1px;
   border-color: #d5d5d5;
