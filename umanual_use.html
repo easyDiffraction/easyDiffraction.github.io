@@ -52,11 +52,12 @@
                         <h6> <a href="umanual_use.html#3.1.2.-main-window">3.1.2. Main window</a> </h6>
                         <h6> <a href="umanual_use.html#3.1.3.-sidebar">3.1.3. Sidebar</a> </h6>
                         <h4> <a href="umanual_use.html#3.2.-data-processing-workflow">3.2. Data processing workflow</a> </h4>
-                        <h6> <a href="umanual_use.html#3.2.1.-project">3.2.1. Create/Open project</a> </h6>
-                        <h6> <a href="umanual_use.html#3.2.2.-experimental-data">3.2.2. Load experimental data</a> </h6>
-                        <h6> <a href="umanual_use.html#3.2.3.-sample-model">3.2.3. Define sample model</a> </h6>
-                        <h6> <a href="umanual_use.html#3.2.4.-analysis">3.2.4. Perform data analysis</a> </h6>
-                        <h6> <a href="umanual_use.html#3.2.5.-summary">3.2.5. Generate summary report</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.1.-select">3.2.1. Select modeling/analysis</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.2.-project">3.2.2. Create/Open project</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.3.-experimental-data">3.2.3. Load experimental data</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.4.-sample-model">3.2.4. Define sample model</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.5.-analysis">3.2.5. Perform data analysis</a> </h6>
+                        <h6> <a href="umanual_use.html#3.2.6.-summary">3.2.6. Generate summary report</a> </h6>
                     </article>
                 </div>
                 <!--- toc area --->
@@ -144,7 +145,6 @@
                           </div>
                           <!-- sub-section -->
 
-
                         </div>
                         <!--- section --->
 
@@ -157,22 +157,25 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.?.-???">3.2.?. Select between modeling and analysis</a></h3>
-                                <p>This selection can be performed just after the start of easyDiffraction</p>
+                                <h3 id="3.2.1.-select">3.2.1. Select between modeling and analysis</a></h3>
+                                <p>The selection can be performed just after the start of easyDiffraction, see the screenshot below:</p>
                                 <figure><img src="images/ed_how-to-use_select.png"></figure>
                             </div>
                             <!-- sub-section -->
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.1.-project">3.2.1. Create/Open project</a></h3>
-                                <p>All manipulations can be performed on the tab <code>Home</code></p>
+                                <h3 id="3.2.2.-project">3.2.2. Create/Open project</a></h3>
+                                <p>All manipulations with project can be performed on the tab <code>Home</code>.</p>
+                                <p>To start with easyDiffraction, please click <code>Open another project</code> button
+                                  in sidebar and select <b>main.rcif</b> file from one of the provided examples.</p>
                                 <figure><img src="images/ed_how-to-use_home.png"></figure>
 
                                 <!--- sub-sub-section --->
                                 <div class="doc-subsubsection">
                                     <h4>Supported file formats</h4>
-                                    <p>Currently, <b>easyDiffraction</b> allows to work with an RCIF file &mdash; an extended CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>). RCIF has the same syntax and logic as a pure CIF, but it also contains additional blocks describing the instrument.</p>
+                                    <p>Currently, <b>easyDiffraction</b> allows to work with the STAR/CIF data format.
+                                      Click <a href="umanual_intro.html#1.2.-cif-based-format">here</a> to learn more about that.</p>
                                 </div>
                                 <!--- sub-sub-section --->
 
@@ -181,9 +184,9 @@
                                     <h4>Application main window</h4>
                                     <p>The application's main window shows:
                                     <ul>
-                                        <li>Project name</li>
-                                        <li>Keywords</li>
-                                        <li>Figures</li>
+                                        <li>Project name.</li>
+                                        <li>Project related information (Keywords, Phases labels, etc.).</li>
+                                        <li>Figures of the crystal structure and refinement curves.</li>
                                     </ul>
                                     </p>
                                 </div>
@@ -194,7 +197,8 @@
                                     <h4>Application sidebar</h4>
                                     <p>The application's sidebar contains the following groups:
                                     <ul>
-                                        <li><b>Get Started</b> group contains buttons to create, open, clone or save the project. Currently, the only enabled button is <code>Open another project</code></li>
+                                        <li><b>Get Started</b> group contains buttons to create, open, clone or save the project.
+                                          Currently, the only enabled button is <code>Open another project</code>.</li>
                                         <li><b>Recent Projects</b> group is currently disabled</a>.</li>
                                         <li><b>Examples</b> group is currently disabled</a>.</li>
                                         <li><b>Program Preferences</b> are presented here.</li>
@@ -216,59 +220,82 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.2.-experimental-data">3.2.2. Load experimental data</a></h3>
-                                <p>All manipulations can be performed on the tab <code>Experimental Data</code></p>
+                                <h3 id="3.2.3.-experimental-data">3.2.3. Load experimental data</a></h3>
+                                <p>All manipulations with experimentally measured data can be performed on the
+                                  tab <code>Experimental Data</code>.</p>
                                 <figure><img src="images/ed_how-to-use_experiments.png"></figure>
 
                                 <!--- sub-sub-section --->
                                 <div class="doc-subsubsection">
                                     <h4>Supported file formats</h4>
-                                    <p>The instrument description is taken from the RCIF file. An example is given below:
+                                    <p>The instrument description is taken from the <b>experiments.cif</b> file.
+                                      An example is given below:
                                     <code class=code-block>
                                         data_pnd<br>
                                         <br>
-                                        _pd_beam_flipper_efficiency 1.0<br>
-                                        _pd_beam_polarization_up 1e-05<br>
-                                        _pd_chi2_diff False<br>
-                                        _pd_chi2_down False<br>
+                                        _diffrn_radiation_wavelength 0.84<br>
+                                        _diffrn_radiation_polarization 0.0<br>
+                                        _diffrn_radiation_efficiency 1.0<br>
+                                        _diffrn_ambient_field 1.0<br>
+                                        <br>
+                                        _pd_2theta_range_min 4.000<br>
+                                        _pd_2theta_range_max 80.000<br>
+                                        _pd_calib_2theta_offset -0.1()<br>
+                                        <br>
+                                        _pd_instr_resolution_u 16.9776<br>
+                                        _pd_instr_resolution_v -2.8357<br>
+                                        _pd_instr_resolution_w 0.5763<br>
+                                        _pd_instr_resolution_x 0.0<br>
+                                        _pd_instr_resolution_y 0.0<br>
+                                        <br>
                                         _pd_chi2_sum True<br>
+                                        _pd_chi2_diff False<br>
                                         _pd_chi2_up False<br>
-                                        _pd_file_name_bkgr full.bkg<br>
-                                        _pd_file_name_input full.dat<br>
-                                        _pd_file_name_output full.out<br>
-                                        _pd_reflex_asymmetry_p1 0.0<br>
-                                        _pd_reflex_asymmetry_p2 0.0<br>
-                                        _pd_reflex_asymmetry_p3 0.0<br>
-                                        _pd_reflex_asymmetry_p4 0.0<br>
-                                        _pd_resolution_u 16.9776<br>
-                                        _pd_resolution_v -2.83572490939<br>
-                                        _pd_resolution_w 0.576309204074<br>
-                                        _pd_resolution_x 0.0<br>
-                                        _pd_resolution_y 0.0<br>
-                                        _pd_shift_const -0.385404<br>
-                                        _pd_tth_max 80.0<br>
-                                        _pd_tth_min 4.0<br>
+                                        _pd_chi2_down False<br>
+                                        <br>
+                                        loop_<br>
+                                        _pd_phase_label<br>
+                                        _pd_phase_scale<br>
+                                        _pd_phase_igsize<br>
+                                        Fe3O4 0.0238 0.0<br>
+                                        <br>
+                                        loop_<br>
+                                        _pd_background_2theta<br>
+                                        _pd_background_intensity<br>
+                                        4.5 255.95<br>
+                                        40.0 157.96<br>
+                                        80.0 64.78<br>
                                     </code>
                                     </p>
-                                    <p>Currently, <b>easyDiffraction</b> supports the polarized powder diffraction data only. An example of this file format is shown below:
+                                    <p>Currently, <b>easyDiffraction</b> supports the polarized powder diffraction data only.
+                                      An example of the data section of the <b>experiments.cif</b> file is shown below:
                                     <code class=code-block>
-                                        #wavelength 0.84<br>
-                                        #field 1.0<br>
-                                        # ttheta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IntUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sIntUP&nbsp;&nbsp;&nbsp;&nbsp;IntDOWN&nbsp;&nbsp;&nbsp;sIntDOWN<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;4.00&nbsp;&nbsp;465.80000&nbsp;&nbsp;128.97000&nbsp;&nbsp;301.88000&nbsp;&nbsp;129.30000<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;4.20&nbsp;&nbsp;323.78000&nbsp;&nbsp;118.22000&nbsp;&nbsp;206.06000&nbsp;&nbsp;120.00000<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;4.40&nbsp;&nbsp;307.14000&nbsp;&nbsp;115.90000&nbsp;&nbsp;230.47000&nbsp;&nbsp;116.53000<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;4.60&nbsp;&nbsp;172.13000&nbsp;&nbsp;115.84000&nbsp;&nbsp;236.52000&nbsp;&nbsp;113.74000<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;...
+                                      loop_<br>
+                                      _pd_meas_angle_2theta<br>
+                                      _pd_meas_intensity_up<br>
+                                      _pd_meas_intensity_up_sigma<br>
+                                      _pd_meas_intensity_down<br>
+                                      _pd_meas_intensity_down_sigma<br>
+                                      4.0 465.8 128.97 301.88 129.3<br>
+                                      4.2 323.78 118.22 206.06 120.0<br>
+                                      4.4 307.14 115.9 230.47 116.53<br>
+                                      4.6 172.13 115.84 236.52 113.74<br>
+                                      4.8 164.31 110.75 291.6 110.73<br>
+                                      5.0 166.47 106.51 426.73 109.08<br>
+                                      5.2 217.67 104.66 183.24 107.79<br>
+                                      5.4 84.01 99.91 179.87 99.98<br>
+                                      5.6 220.87 98.72 297.76 99.83<br>
+                                      5.8 223.46 98.77 149.78 98.18<br>
+                                      6.0 408.25 96.89 356.86 96.41<br>
+                                      6.2 381.21 94.03 287.26 96.94<br>
+                                      ...
                                     </code>
                                     <ul>
-                                        <li><b>wavelength</b>: Experimental neutron wavelength.</li>
-                                        <li><b>field</b>: Applied magnetic field.</li>
-                                        <li><b>ttheta</b>: Angular position of the Bragg peak.</li>
-                                        <li><b>IntUP</b>: Intensity of scattered beam of neutrons polarized with spin "UP".</li>
-                                        <li><b>sIntUP</b>: Standard deviation of IntUP.</li>
-                                        <li><b>IntDOWN</b>: Intensity of scattered beam of neutrons polarized with spin "DOWN".</li>
-                                        <li><b>sIntDOWN</b>: Standard deviation of IntDOWN.</li>
+                                        <li><b>_pd_meas_angle_2theta</b>: Angular position of the Bragg peak.</li>
+                                        <li><b>_pd_meas_intensity_up</b>: Intensity of scattered beam of neutrons polarized with spin "UP".</li>
+                                        <li><b>_pd_meas_intensity_up_sigma</b>: Standard deviation of intensity "UP".</li>
+                                        <li><b>_pd_meas_intensity_down</b>: Intensity of scattered beam of neutrons polarized with spin "DOWN".</li>
+                                        <li><b>_pd_meas_intensity_down_sigma</b>: Standard deviation of intensity "DOWN".</li>
                                     </ul>
                                     </p>
                                 </div>
@@ -322,14 +349,17 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.3.-sample-model">3.2.3. Define sample model</a></h3>
-                                <p>All manipulations can be performed on the tab <code>Sample Model</code></p>
+                                <h3 id="3.2.4.-sample-model">3.2.4. Define sample model</a></h3>
+                                <p>All manipulations with sample phases can be performed on the tab <code>Sample Model</code>.</p>
                                 <figure><img src="images/ed_how-to-use_phases.png"></figure>
 
                                 <!--- sub-sub-section --->
                                 <div class="doc-subsubsection">
                                     <h4>Supported file formats</h4>
-                                    <p>Currently, the structural model is taken from the RCIF file, where it is described in the same way as in pure CIF. An example is shown below. Explanations about the full syntax can be found <a href="https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax">elsewhere</a>.
+                                    <p>Currently, the structural model is taken from the <b>phases.cif</b> file, where
+                                      it is described in the same way as in pure <a href="https://www.iucr.org/resources/cif">CIF</a>.
+                                      An example is shown below. Explanations about the full syntax can be found
+                                      <a href="https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax">elsewhere</a>.
                                     <code class=code-block>
                                         data_phase_1<br>
                                         <br>
@@ -366,7 +396,8 @@
                                     <p>The application's main window contains the following tabs:
                                     <ol>
                                         <li><code>Structure View</code> shows a 3D crystal structure model.</li>
-                                        <li><code>Text View</code> displays the structure model in the CIF (<a href="https://www.iucr.org/resources/cif">Crystallographic Information File</a>) format.</li>
+                                        <li><code>Text View</code> displays the structure model in the
+                                          <a href="https://www.iucr.org/resources/cif">CIF</a> format.</li>
                                     </ol>
                                     </p>
                                     <p>An interaction with the plot is performed as follows:
@@ -384,11 +415,22 @@
                                     <h4>Application sidebar</h4>
                                     <p>The application's sidebar contains the following groups:
                                     <ul>
-                                        <li><b>Structural phases</b> group shows the table of crystalline phases present in the sample. The parameters of the selected phase are given in the groups below.</li>
-                                        <li><b>Symmetry and cell parameters</b> group contains information about space group <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html">crystal system</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html">number</a>, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_name_H-M_alt.html">name</a> and setting, as well as unit cell <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html">lengths</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html">angles</a>.</li>
-                                        <li><b>Atoms, atomic coordinates and occupations</b> group contains details about the atom sites, such as <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html">label</a>, color in the structure plot, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_fract_.html">coordinates</a> and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_occupancy.html">occupancy</a>.</li>
-                                        <li><b>Atomic displacement parameters</b>, also known as atomic vibration parameters or thermal parameters, are presented here.</li>
-                                        <li><b>Magnetic susceptibility parameters</b>, or atomic site susceptibility tensor within local susceptibility approach, are given here.</li>
+                                        <li><b>Structural phases</b> group shows the table of crystalline phases present
+                                          in the sample. The parameters of the selected phase are given in the groups below.</li>
+                                        <li><b>Symmetry and cell parameters</b> group contains information about space group
+                                          <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html">crystal system,</a>
+                                          <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html">number,</a>
+                                          <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_name_H-M_alt.html">name</a>
+                                          and setting, as well as unit cell <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html">lengths</a>
+                                          and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html">angles</a>.</li>
+                                        <li><b>Atoms, atomic coordinates and occupations</b> group contains details about the atom sites, such as
+                                          <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html">label</a>,
+                                          color in the structure plot, <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_fract_.html">coordinates</a>
+                                          and <a href="https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_occupancy.html">occupancy</a>.</li>
+                                        <li><b>Atomic displacement parameters</b>, also known as atomic vibration parameters or thermal parameters, are
+                                          presented here.</li>
+                                        <li><b>Magnetic susceptibility parameters</b>, or atomic site susceptibility tensor within local susceptibility
+                                          approach, are given here.</li>
                                     </ul>
                                     </p>
                                     <p>There are the following buttons at the very bottom of the sidebar:
@@ -408,8 +450,8 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.4.-analysis">3.2.4. Perform data analysis</a></h3>
-                                <p>Data analysis is performed in the tab <code>Analysis</code>.</p>
+                                <h3 id="3.2.5.-analysis">3.2.5. Perform data analysis</a></h3>
+                                <p>Data analysis (structure refinement) is performed in the tab <code>Analysis</code>.</p>
                                 <figure><img src="images/ed_how-to-use_analysis.png"></figure>
 
                                 <!--- sub-sub-section --->
@@ -418,8 +460,7 @@
                                     <p>The application's main window contains the following tabs:
                                     <ol>
                                         <li><code>Fitting</code> shows plot of the data and model using current parameters.</li>
-                                        <li><code>Constraints</code> contains a table with parameter constraints.</li>
-                                        <li><code>Text View (RCIF)</code> displays the contents of the RCIF file.</li>
+                                        <li><code>Text View</code> displays the results of structure refinement in the START/CIF format.</li>
                                     </ol>
                                     </p>
                                     <p>An interaction with the plot shown in the <code>Fitting</code> tab is performed as follows:
@@ -427,12 +468,6 @@
                                         <li><b>View data point</b>: Hover mouse over data point.</li>
                                         <li><b>Zoom in</b>: Hold left click and drag a box over desired area.</li>
                                         <li><b>Reset view</b>: Right mouse button.</li>
-                                    </ul>
-                                    </p>
-                                    <p>An interaction with the table shown in the <code>Constraints</code> tab is performed as follows:
-                                    <ul>
-                                        <li><b>Select parameter to lock</b>: Choose from drop down in group and parameter.</li>
-                                        <li><b>Select parameter to constrain to</b>: Choose from drop down in group and parameter.</li>
                                     </ul>
                                     </p>
                                 </div>
@@ -445,17 +480,12 @@
 
                                     <p>The <code>Fitting</code> sidebar contains the following elements:
                                     <ul>
-                                        <li><b>Parameters</b> group shows the table of parameters. Limits and starting values are shown, along with a checkbox for selecting the variable for fitting (limits not implemented yet).</li>
+                                        <li><b>Parameters</b> group shows the table of parameters. Starting values are shown, along with a checkbox for selecting the variable for fitting.</li>
                                         <li><b>Start/Stop fitting</b> button that initiates and stops fitting.</li>
                                         <li><b>Accept refined parameters</b> button (not implemented yet).</li>
                                     </ul>
                                     </p>
-                                    <p>The <code>Constraints</code> sidebar contains the following elements:
-                                    <ul>
-                                        <li><b>Add/remove constraints</b> Holds button for adding new constraint and deleting all constraints (both currently disabled).</li>
-                                    </ul>
-                                    </p>
-                                    <p>The <code>Text View (RCIF)</code> sidebar contans the following elements:
+                                    <p>The <code>Text View</code> sidebar contans the following elements:
                                     <ul>
                                         <li><b>Find</b> Search in the RCIF file (currently disabled).</li>
                                     </ul>
@@ -477,8 +507,8 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.5.-summary">3.2.5. Generate summary report</a></h3>
-                                <p>Here you can view the summary report.</p>
+                                <h3 id="3.2.6.-summary">3.2.6. Generate summary report</a></h3>
+                                <p>Here you can view and export the summary report.</p>
                                 <figure><img src="images/ed_how-to-use_summary.png"></figure>
 
                                 <!--- sub-sub-section --->
@@ -491,7 +521,8 @@
                                     </p>
                                     <p>The report contains the following:
                                     <ul>
-                                        <li><b>Parameters</b> displays table with all parameters .</li>
+                                        <li><b>Project</b> related information.</li>
+                                        <li><b>Parameters</b> displays table with all parameters.</li>
                                         <li><b>Fitting</b> shows plot of data and model with current parameters.</li>
                                         <li><b>Structure</b> contains 3D view of structure.</li>
                                     </ul>
@@ -504,8 +535,8 @@
                                     <h4>Application sidebar</h4>
                                     <p>The application's sidebar contains the following elements:
                                     <ul>
-                                        <li><b>Export elements</b> has checkboxes for each element in the report to select those that should be exported (currently disabled).</li>
-                                        <li><b>Export as...</b> contains export button, field for custom report name and drop down menu for file format (currently disabled).</li>
+                                      <li><b>Export as...</b> contains export button, field for custom report name and drop down menu for file format.</li>
+                                      <li><b>Export elements</b> has checkboxes for each element in the report to select those that should be exported (currently disabled).</li>
                                     </ul>
                                     </p>
                                     <p>There are the following buttons at the very bottom of the sidebar of each tab:
