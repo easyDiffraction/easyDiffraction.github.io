@@ -38,7 +38,8 @@ body header { /* reimplement main.css */
 /* prototype area  */
 
 .prototype-area {
-  padding-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .prototype-area section p {
@@ -49,29 +50,72 @@ body header { /* reimplement main.css */
 /* download area  */
 
 .download-area {
+  margin-top: 1em;
   padding-top: 0.1em;
   padding-bottom: 4.5em;
 }
 
 .download-area button {
-  height: 4em;
-  width: 16.5em;
+  height: 5em;
+  width: 16.25em;
+  background-color: #252525;
+  color: white;
+  border: #cdcdcd solid 0.5px;
+  border-radius: 2px;
+}
+
+.download-area button:hover {
+  filter: opacity(95%); /* black to dark gray */
+}
+
+.download-area button img {
+  display: inline-block;
+  width: 2.3em;
+  height: auto;
+  margin-left: -0.5em;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.download-area button div {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 0.7em;
+}
+
+.download-area button span {
+  display: block;
+  text-align: left;
+  font-size: 2.0em;
+  line-height: 1.2em;
+  font-weight: bold;
 }
 
 .download-area #snap button {
-  height: 4em;
-  width: 13em;
+  border: none;
+  border-radius: 2px;
 }
 
 .download-area #snap button img {
-  height: 4em;
-  width: 13em;
+  height: 5em;
+  width: auto;
+  margin: 0;
 }
 
 .download-area section article {
   padding: 0em;
   margin: 0.35em 0.25em;
   display: inline-block;
+}
+
+.download-area section article div {
+  font-size: 1.1em;
+}
+
+.download-area section p {
+  font-size: 1.1em;
 }
 
 /* screenshot area  */
