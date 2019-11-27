@@ -58,6 +58,16 @@ body header { /* reimplement main.css */
   width: 16.5em;
 }
 
+.download-area #snap button {
+  height: 4em;
+  width: 13em;
+}
+
+.download-area #snap button img {
+  height: 4em;
+  width: 13em;
+}
+
 .download-area section article {
   padding: 0em;
   margin: 0.35em 0.25em;
