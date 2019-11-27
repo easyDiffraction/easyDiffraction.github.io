@@ -117,6 +117,7 @@ body header { /* reimplement main.css */
 
 .download-area section p {
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 /* screenshot area  */
