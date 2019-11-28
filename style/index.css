@@ -59,7 +59,6 @@ body header { /* reimplement main.css */
   display: none;
   padding: 0em;
   margin: 0.35em 0.25em;
-  display: inline-block;
 }
 
 .download-area section article div {
