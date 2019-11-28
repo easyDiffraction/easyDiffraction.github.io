@@ -55,6 +55,23 @@ body header { /* reimplement main.css */
   padding-bottom: 4.5em;
 }
 
+.download-area section article {
+  display: none;
+  padding: 0em;
+  margin: 0.35em 0.25em;
+  display: inline-block;
+}
+
+.download-area section article div {
+  font-size: 1.1em;
+  color: #444
+}
+
+.download-area section p {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
 .download-area button {
   height: 5em;
   width: 16.25em;
@@ -64,9 +81,24 @@ body header { /* reimplement main.css */
   border-radius: 2px;
 }
 
-.download-area button:hover {
-  filter: opacity(95%); /* black to dark gray */
+.download-area button:disabled {
+  background-color: #444;
+  cursor: initial;
 }
+
+.download-area button:disabled div {
+  color: #ccc;
+}
+
+.download-area button:disabled img {
+  filter: invert(20%); /* black to dark gray */
+}
+
+/*
+.download-area button:hover {
+  filter: opacity(95%);
+}
+*/
 
 .download-area button img {
   display: inline-block;
@@ -85,6 +117,9 @@ body header { /* reimplement main.css */
   line-height: 0.7em;
 }
 
+.download-area section article button div {
+  color: white
+}
 .download-area button span {
   display: block;
   text-align: left;
@@ -102,22 +137,6 @@ body header { /* reimplement main.css */
   height: 5em;
   width: auto;
   margin: 0;
-}
-
-.download-area section article {
-  display: none;
-  padding: 0em;
-  margin: 0.35em 0.25em;
-  display: inline-block;
-}
-
-.download-area section article div {
-  font-size: 1.1em;
-}
-
-.download-area section p {
-  font-size: 1.1em;
-  cursor: pointer;
 }
 
 /* screenshot area  */
