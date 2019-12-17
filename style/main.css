@@ -188,7 +188,7 @@ code {
   border-radius: 4px;
   margin-top: 0em;
   margin-bottom: 0.75em;
-  padding-top: 1.5em;
+  padding-top: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 1em;
   padding-right: 1em;
@@ -293,14 +293,14 @@ a:hover {
 /*********/
 
 ol {
-  margin-top: -0.75em;
+  margin-top: 0;
   margin-left: 1.4em; /* list-style-position: inside; */
   font-size: 1em;
   color: #555;
 }
 
 ul {
-  margin-top: -0.75em;
+  margin-top: 0;
   margin-left: 1.1em; /* list-style-position: inside; */
   font-size: 1em;
   color: #555;
