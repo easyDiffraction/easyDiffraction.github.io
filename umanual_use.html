@@ -101,9 +101,10 @@
                               <figure><img src="images/ed_how-to-use_toolbar.png"></figure>
                               <p>The following buttons (workflow steps) are present in the <a href="index.html">easyDiffraction</a> toolbar:</p>
                               <ol>
-                                <li><code>Home</code> to manage your project (create new, open existing, etc.) </li>
-                                <li><code>Experimental Data</code> to load experimentally measured data files.</li>
+                                <li><code>Home</code> introduction page, links to about, help and contact. </li>
+                                <li><code>Project</code> to manage your project (create new, open existing, etc.) </li>
                                 <li><code>Sample Model</code> to describe sample phases.</li>
+                                <li><code>Experimental Data</code> to load experimentally measured data files.</li>
                                 <li><code>Analysis</code> to perform refinement of structural parameters.</li>
                                 <li><code>Summary</code> to view and export summary report.</li>
                               </ol>
@@ -165,8 +166,8 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.1.-select">3.2.1. Select between modeling and analysis</a></h3>
-                                <p>The selection can be performed just after the start of <a href="index.html">easyDiffraction</a>,
+                                <h3 id="3.2.1.-select">3.2.1. Start page</a></h3>
+                                <p>Choose to read about the project, get help or start data analysis with <a href="index.html">easyDiffraction</a>,
                                   see the screenshot below:</p>
                                 <figure><img src="images/ed_how-to-use_select.png"></figure>
                             </div>
@@ -175,16 +176,20 @@
                             <!-- sub-section -->
                             <div class="doc-subsection">
                                 <h3 id="3.2.2.-project">3.2.2. Create/Open project</a></h3>
-                                <p>All manipulations with project can be performed on the <code>Home</code> tab.</p>
-                                <p>To start with <a href="index.html">easyDiffraction</a>, please click <code>Open another project</code> button
-                                  in sidebar and select <b>main.rcif</b> file from one of the provided examples.</p>
+                                <p>All manipulations with project can be performed on the <code>Project</code> tab.</p>
+                                <p>To start with <a href="index.html">easyDiffraction</a>, please click the <code>Create a new project</code> button
+                                  to start a new project, or click the <code>Open another project</code> button in sidebar and select <b>main.rcif</b>
+                                  file from one of the provided examples.</p>
                                 <figure><img src="images/ed_how-to-use_home.png"></figure>
 
                                 <!--- sub-sub-section --->
                                 <div class="doc-subsubsection">
                                     <h4>Supported file formats</h4>
-                                    <p>Currently, <a href="index.html">easyDiffraction</a> allows to work with the STAR/CIF data format.
-                                      Click <a href="umanual_intro.html#1.2.-cif-based-format">here</a> to learn more about that.</p>
+                                    <p>Currently, <a href="index.html">easyDiffraction</a> works best with the STAR/CIF data format.
+                                      Click <a href="umanual_intro.html#1.2.-cif-based-format">here</a> to learn more about that.
+                                      It is however also possible to load experimental data in .xye format with data in raw text.
+                                      Three columns are interpreted as 2theta, Intensity and Error, while five columns are interpreted as
+                                      polarized data with spin up intensity / error followed by spin down intensity / error.</p>
                                 </div>
                                 <!--- sub-sub-section --->
 
@@ -207,16 +212,14 @@
                                     <p>The application's sidebar contains the following groups:
                                     <ul>
                                         <li><b>Get Started</b> group contains buttons to create, open, clone or save the project.
-                                          Currently, the only enabled button is <code>Open another project</code>.</li>
+                                          Currently, only the buttons named <code>Create new project</code> and <code>Open another project</code> are enabled.</li>
                                         <li><b>Recent Projects</b> group is currently disabled</a>.</li>
                                         <li><b>Examples</b> group is currently disabled</a>.</li>
-                                        <li><b>Program Preferences</b> are available here.</li>
                                     </ul>
                                     </p>
                                     <p>The very bottom of the sidebar contains the following buttons:
                                     <ul>
-                                        <li><code>Experimental Data</code> to go to the next step in the data processing.</li>
-                                        <li><code>Save Current State</code> of the project (currently disabled).</li>
+                                        <li><code>Sample</code> to go to the next step in the data processing.</li>
                                         <li><code>Get Online Help</code> for the current tab.</li>
                                         <li><code>Report a bug or issue</code> online.</li>
                                     </ul>
@@ -229,137 +232,8 @@
 
                             <!-- sub-section -->
                             <div class="doc-subsection">
-                                <h3 id="3.2.3.-experimental-data">3.2.3. Load experimental data</a></h3>
-                                <p>All manipulations with experimentally measured data can be performed on the
-                                  <code>Experimental Data</code> tab.</p>
-                                <figure><img src="images/ed_how-to-use_experiments.png"></figure>
-
-                                <!--- sub-sub-section --->
-                                <div class="doc-subsubsection">
-                                    <h4>Supported file formats</h4>
-                                    <p>The instrument description is taken from the <b>experiments.cif</b> file.
-                                      An example is given below:
-                                    <code class=code-block>
-                                        data_pnd<br>
-                                        <br>
-                                        _diffrn_radiation_wavelength 0.84<br>
-                                        _diffrn_radiation_polarization 0.0<br>
-                                        _diffrn_radiation_efficiency 1.0<br>
-                                        _diffrn_ambient_field 1.0<br>
-                                        <br>
-                                        _pd_2theta_range_min 4.000<br>
-                                        _pd_2theta_range_max 80.000<br>
-                                        _pd_calib_2theta_offset -0.1()<br>
-                                        <br>
-                                        _pd_instr_resolution_u 16.9776<br>
-                                        _pd_instr_resolution_v -2.8357<br>
-                                        _pd_instr_resolution_w 0.5763<br>
-                                        _pd_instr_resolution_x 0.0<br>
-                                        _pd_instr_resolution_y 0.0<br>
-                                        <br>
-                                        _pd_chi2_sum True<br>
-                                        _pd_chi2_diff False<br>
-                                        _pd_chi2_up False<br>
-                                        _pd_chi2_down False<br>
-                                        <br>
-                                        loop_<br>
-                                        _pd_phase_label<br>
-                                        _pd_phase_scale<br>
-                                        _pd_phase_igsize<br>
-                                        Fe3O4 0.0238 0.0<br>
-                                        <br>
-                                        loop_<br>
-                                        _pd_background_2theta<br>
-                                        _pd_background_intensity<br>
-                                        4.5 255.95<br>
-                                        40.0 157.96<br>
-                                        80.0 64.78<br>
-                                    </code>
-                                    </p>
-                                    <p>Currently, <a href="index.html">easyDiffraction</a> only supports the polarized powder diffraction data.
-                                      An example of the data section of the <b>experiments.cif</b> file is shown below:
-                                    <code class=code-block>
-                                      loop_<br>
-                                      _pd_meas_angle_2theta<br>
-                                      _pd_meas_intensity_up<br>
-                                      _pd_meas_intensity_up_sigma<br>
-                                      _pd_meas_intensity_down<br>
-                                      _pd_meas_intensity_down_sigma<br>
-                                      4.0 465.8 128.97 301.88 129.3<br>
-                                      4.2 323.78 118.22 206.06 120.0<br>
-                                      4.4 307.14 115.9 230.47 116.53<br>
-                                      4.6 172.13 115.84 236.52 113.74<br>
-                                      4.8 164.31 110.75 291.6 110.73<br>
-                                      5.0 166.47 106.51 426.73 109.08<br>
-                                      5.2 217.67 104.66 183.24 107.79<br>
-                                      5.4 84.01 99.91 179.87 99.98<br>
-                                      5.6 220.87 98.72 297.76 99.83<br>
-                                      5.8 223.46 98.77 149.78 98.18<br>
-                                      6.0 408.25 96.89 356.86 96.41<br>
-                                      6.2 381.21 94.03 287.26 96.94<br>
-                                      ...
-                                    </code>
-                                    <ul>
-                                        <li><b>_pd_meas_angle_2theta</b>: Angular position of the Bragg peak.</li>
-                                        <li><b>_pd_meas_intensity_up</b>: Intensity of scattered beam of neutrons polarized with spin "UP".</li>
-                                        <li><b>_pd_meas_intensity_up_sigma</b>: Standard deviation of intensity "UP".</li>
-                                        <li><b>_pd_meas_intensity_down</b>: Intensity of scattered beam of neutrons polarized with spin "DOWN".</li>
-                                        <li><b>_pd_meas_intensity_down_sigma</b>: Standard deviation of intensity "DOWN".</li>
-                                    </ul>
-                                    </p>
-                                </div>
-                                <!--- sub-sub-section --->
-
-                                <!--- sub-sub-section --->
-                                <div class="doc-subsubsection">
-                                    <h4>Application main window</h4>
-                                    <p>The application's main window contains the following tabs:
-                                    <ol>
-                                        <li><code>Plot View</code> shows the experimental data plots.</li>
-                                        <li><code>Table View</code> contains a table with the extracted data.</li>
-                                        <li><code>Text View</code> displays the content of the data file.</li>
-                                    </ol>
-                                    </p>
-                                    <p>An interaction with the plot is performed as follows:
-                                    <ul>
-                                        <li><b>Show coordinates</b>: Hover mouse pointer over the data point.</li>
-                                        <li><b>Zoom in</b>: Drag with left mouse button pressed.</li>
-                                        <li><b>Reset zoom</b>: Click right mouse button.</li>
-                                    </ul>
-                                    </p>
-                                </div>
-                                <!--- sub-sub-section --->
-
-                                <!--- sub-sub-section --->
-                                <div class="doc-subsubsection">
-                                    <h4>Application sidebar</h4>
-                                    <p>The application's sidebar contains the following groups:
-                                    <ul>
-                                        <li><b>Data explorer</b> shows experimental data file name and directory.</li>
-                                        <li><b>Instrument</b> contains information about the neutron scattering instrument.</li>
-                                        <li><b>Peak profile</b> contains information about the peak profile.</li>
-                                        <li><b>Misc</b> contains miscellaneous information.</li>
-                                    </ul>
-                                    </p>
-                                    <p>The very bottom of the sidebar contains the following buttons:
-                                    <ul>
-                                        <li><code>Home</code> to go to the previous step in the data processing.</li>
-                                        <li><code>Sample Model</code> to go to the next step in the data processing.</li>
-                                        <li><code>Save Current State</code> of the project (currently disabled).</li>
-                                        <li><code>Get Online Help</code> for the current tab.</li>
-                                        <li><code>Report a bug or issue</code> online.</li>
-                                    </ul>
-                                    </p>
-                                </div>
-                                <!--- sub-sub-section --->
-
-                            </div>
-                            <!-- sub-section -->
-
-                            <!-- sub-section -->
-                            <div class="doc-subsection">
-                                <h3 id="3.2.4.-sample-model">3.2.4. Define sample model</a></h3>
-                                <p>All manipulations with sample phases can be performed on the <code>Sample Model</code> tab.</p>
+                                <h3 id="3.2.4.-sample-model">3.2.3. Define sample model</a></h3>
+                                <p>All manipulations with sample phases can be performed on the <code>Sample</code> tab.</p>
                                 <figure><img src="images/ed_how-to-use_phases.png"></figure>
 
                                 <!--- sub-sub-section --->
@@ -442,11 +316,144 @@
                                           approach, are given here.</li>
                                     </ul>
                                     </p>
+                                    <p>The very bottom of the sidebar contains the following buttons (it may be necessary to close some groups to view these):
+                                    <ul>
+                                        <li><code>Project</code> to go to the previous step in the data processing.</li>
+                                        <li><code>Experiment</code> to go to the next step in the data processing.</li>
+                                        <li><code>Get Online Help</code> for the current tab.</li>
+                                        <li><code>Report a bug or issue</code> online.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <!--- sub-sub-section --->
+
+                            </div>
+                            <!-- sub-section -->
+
+                            <!-- sub-section -->
+                            <div class="doc-subsection">
+                                <h3 id="3.2.4.-experimental-data">3.2.3. Load experimental data</a></h3>
+                                <p>All manipulations with experimentally measured data can be performed on the
+                                  <code>Experiment</code> tab.</p>
+                                <figure><img src="images/ed_how-to-use_experiments.png"></figure>
+
+                                <!--- sub-sub-section --->
+                                <div class="doc-subsubsection">
+                                    <h4>Supported file formats</h4>
+                                    <p>The instrument description is taken from an <b>experiments.cif</b> or <b>experiments.xye</b> file.
+                                      An example of a cif file is given below:
+                                    <code class=code-block>
+                                        data_pnd<br>
+                                        <br>
+                                        _diffrn_radiation_wavelength 0.84<br>
+                                        _diffrn_radiation_polarization 0.0<br>
+                                        _diffrn_radiation_efficiency 1.0<br>
+                                        _diffrn_ambient_field 1.0<br>
+                                        <br>
+                                        _pd_2theta_range_min 4.000<br>
+                                        _pd_2theta_range_max 80.000<br>
+                                        _pd_calib_2theta_offset -0.1()<br>
+                                        <br>
+                                        _pd_instr_resolution_u 16.9776<br>
+                                        _pd_instr_resolution_v -2.8357<br>
+                                        _pd_instr_resolution_w 0.5763<br>
+                                        _pd_instr_resolution_x 0.0<br>
+                                        _pd_instr_resolution_y 0.0<br>
+                                        <br>
+                                        _pd_chi2_sum True<br>
+                                        _pd_chi2_diff False<br>
+                                        _pd_chi2_up False<br>
+                                        _pd_chi2_down False<br>
+                                        <br>
+                                        loop_<br>
+                                        _pd_phase_label<br>
+                                        _pd_phase_scale<br>
+                                        _pd_phase_igsize<br>
+                                        Fe3O4 0.0238 0.0<br>
+                                        <br>
+                                        loop_<br>
+                                        _pd_background_2theta<br>
+                                        _pd_background_intensity<br>
+                                        4.5 255.95<br>
+                                        40.0 157.96<br>
+                                        80.0 64.78<br>
+                                    </code>
+                                     Here an example of an xye file is shown:
+                                    <code class=code-block>
+                                        4.5 255.95 31.2<br>
+                                        40.0 157.96 18.7<br>
+                                        80.0 64.78 9.1<br>
+                                    </code>
+                                    </p>
+                                    <p><a href="index.html">easyDiffraction</a> supports both polarized and unpolarized powder diffraction data.
+                                      Below is an example of the data section of the <b>experiments.cif</b> file for polarized data, a xye file with five columns in the same order can be used as well.
+                                    <code class=code-block>
+                                      loop_<br>
+                                      _pd_meas_angle_2theta<br>
+                                      _pd_meas_intensity_up<br>
+                                      _pd_meas_intensity_up_sigma<br>
+                                      _pd_meas_intensity_down<br>
+                                      _pd_meas_intensity_down_sigma<br>
+                                      4.0 465.8 128.97 301.88 129.3<br>
+                                      4.2 323.78 118.22 206.06 120.0<br>
+                                      4.4 307.14 115.9 230.47 116.53<br>
+                                      4.6 172.13 115.84 236.52 113.74<br>
+                                      4.8 164.31 110.75 291.6 110.73<br>
+                                      5.0 166.47 106.51 426.73 109.08<br>
+                                      5.2 217.67 104.66 183.24 107.79<br>
+                                      5.4 84.01 99.91 179.87 99.98<br>
+                                      5.6 220.87 98.72 297.76 99.83<br>
+                                      5.8 223.46 98.77 149.78 98.18<br>
+                                      6.0 408.25 96.89 356.86 96.41<br>
+                                      6.2 381.21 94.03 287.26 96.94<br>
+                                      ...
+                                    </code>
+                                    <ul>
+                                        <li><b>_pd_meas_angle_2theta</b>: Angular position of the Bragg peak.</li>
+                                        <li><b>_pd_meas_intensity_up</b>: Intensity of scattered beam of neutrons polarized with spin "UP".</li>
+                                        <li><b>_pd_meas_intensity_up_sigma</b>: Standard deviation of intensity "UP".</li>
+                                        <li><b>_pd_meas_intensity_down</b>: Intensity of scattered beam of neutrons polarized with spin "DOWN".</li>
+                                        <li><b>_pd_meas_intensity_down_sigma</b>: Standard deviation of intensity "DOWN".</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <!--- sub-sub-section --->
+
+                                <!--- sub-sub-section --->
+                                <div class="doc-subsubsection">
+                                    <h4>Application main window</h4>
+                                    <p>The application's main window contains the following tabs:
+                                    <ol>
+                                        <li><code>Plot View</code> shows the experimental data plots.</li>
+                                        <li><code>Table View</code> contains a table with the extracted data.</li>
+                                        <li><code>Text View</code> displays the content of the data file.</li>
+                                    </ol>
+                                    </p>
+                                    <p>An interaction with the plot is performed as follows:
+                                    <ul>
+                                        <li><b>Show coordinates</b>: Hover mouse pointer over the data point.</li>
+                                        <li><b>Zoom in</b>: Drag with left mouse button pressed.</li>
+                                        <li><b>Reset zoom</b>: Click right mouse button.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <!--- sub-sub-section --->
+
+                                <!--- sub-sub-section --->
+                                <div class="doc-subsubsection">
+                                    <h4>Application sidebar</h4>
+                                    <p>The application's sidebar contains the following groups:
+                                    <ul>
+                                        <li><b>Data explorer</b> shows experimental data file and contains button for loading data.</li>
+                                        <li><b>Instrument</b> contains information about the neutron scattering instrument.</li>
+                                        <li><b>Peak profile</b> contains information about the peak profile.</li>
+                                        <li><b>Misc</b> contains miscellaneous information.</li>
+                                    </ul>
+                                    </p>
                                     <p>The very bottom of the sidebar contains the following buttons:
                                     <ul>
-                                        <li><code>Experimental Data</code> to go to the previous step in the data processing.</li>
+                                        <li><code>Sample</code> to go to the previous step in the data processing.</li>
                                         <li><code>Analysis</code> to go to the next step in the data processing.</li>
-                                        <li><code>Save Current State</code> of the project (currently disabled).</li>
                                         <li><code>Get Online Help</code> for the current tab.</li>
                                         <li><code>Report a bug or issue</code> online.</li>
                                     </ul>
@@ -491,7 +498,6 @@
                                     <ul>
                                         <li><b>Parameters</b> group shows the table of parameters. Starting values are shown, along with a checkbox for selecting the variable for fitting.</li>
                                         <li><b>Start/Stop fitting</b> button that initiates and stops fitting.</li>
-                                        <li><b>Accept refined parameters</b> button (not implemented yet).</li>
                                     </ul>
                                     </p>
                                     <p>The <code>Text View</code> sidebar contans the following elements:
@@ -501,9 +507,8 @@
                                     </p>
                                     <p>The very bottom of the sidebar contains the following buttons of each tab:
                                     <ul>
-                                        <li><code>Sample Model</code> to go to the previous step in the data processing.</li>
+                                        <li><code>Experiment</code> to go to the previous step in the data processing.</li>
                                         <li><code>Summary</code> to go to the next step in the data processing.</li>
-                                        <li><code>Save Current State</code> of the project (currently disabled).</li>
                                         <li><code>Get Online Help</code> for the current tab.</li>
                                         <li><code>Report a bug or issue</code> online.</li>
                                     </ul>
@@ -551,7 +556,6 @@
                                     <p>The very bottom of the sidebar contains the following buttons of each tab:
                                     <ul>
                                         <li><code>Analysis</code> to go to the previous step in the data processing.</li>
-                                        <li><code>Save Current State</code> of the project (currently disabled).</li>
                                         <li><code>Get Online Help</code> for the current tab.</li>
                                         <li><code>Report a bug or issue</code> online.</li>
                                     </ul>
