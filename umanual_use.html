@@ -96,13 +96,13 @@
                               <h3>3.1.1. Toolbar</a></h3>
                               <p>The toolbar at the top of the application window contains three groups of buttons, indicated on the
                                 screenshot below.</p>
-                              <figure><img src="images/ed_how-to-use_toolbar.png"></figure>
-                                <p>On the left side the following buttons are available: </p>
+                              <figure><img src="images/ed_how-to-use_toolbar_overview.png"></figure>
+                                <p>On the left side in group A the following buttons are available: </p>
                               <ol>
                                 <li><code>Application preferences</code> Opens dialog where application settings can be changed. </li>
                                 <li><code>Save current project state</code> Saves the current state of project to .zip file. </li>
                               </ol>
-                              <p>The central group of buttons represent the data analysis workflow. When you create a new project,
+                              <p>The central group of buttons, B, represent the data analysis workflow. When you create a new project,
                                 all toolbar buttons but <code>Home</code> are disabled. When each step in the workflow is completed,
                                 the toolbar button which corresponds to the next step becomes enabled.</p>
                               <figure><img src="images/ed_how-to-use_toolbar.png"></figure>
@@ -115,7 +115,7 @@
                                 <li><code>Analysis</code> to perform refinement of structural parameters.</li>
                                 <li><code>Summary</code> to view and export summary report.</li>
                               </ol>
-                              <p>The group of buttons on the right side of the toolbar consists of a undo and redo button.</p>
+                              <p>The buttons in group C contain a undo and redo button that can be used if a mistake is made.</p>
                               <!--<p>You can switch between the available tabs at any time by clicking on their names.</p>-->
                             <article>
                           </div>
@@ -161,6 +161,21 @@
                             <article>
                           </div>
                           <!-- sub-section -->
+                          
+                          <!-- sub-section -->
+                          <div class="doc-subsection" id="3.1.4.-settings">
+                            <article>
+                              <h3>3.1.4. Settings</a></h3>
+                              <p>The <b>Application preferenecs</b> can be opened from the gear icon in the <b>Toolbar</b>.</p>
+                              <figure><img src="images/ed_how-to-use_settings.png"></figure>
+                              Currently only the two first settings are enabled:
+                              <ol>
+                                <li><code>Show Animated Intro</code> Enables or disables an animation when starting the software.</li>
+                                <li><code>Show User Guides</code> Show in application tutorial hint boxes.</li>
+                              </ol>
+                            <article>
+                          </div>
+                          <!-- sub-section -->
 
                         </div>
                         <!--- section --->
@@ -184,10 +199,10 @@
                             <!-- sub-section -->
                             <div class="doc-subsection">
                                 <h3 id="3.2.2.-project">3.2.2. Create/Open project</a></h3>
-                                <p>All manipulations with project can be performed on the <code>Project</code> tab.</p>
-                                <p>To start with <a href="index.html">easyDiffraction</a>, please click the <code>Create a new project</code> button
-                                  to start a new project, or click the <code>Open another project</code> button in sidebar and select <b>main.rcif</b>
-                                  file from one of the provided examples.</p>
+                                <p>All manipulations of the project can be performed on the <code>Project</code> tab.</p>
+                                <p>To start using <a href="index.html">easyDiffraction</a>, please click the <code>Create a new project</code>
+                                  button to start a new project, or click the <code>Open another project</code> button and select a
+                                  <b>main.rcif</b> file from one of the provided examples.</p>
                                 <figure><img src="images/ed_how-to-use_home.png"></figure>
 
                                 <!--- sub-sub-section --->
@@ -353,14 +368,14 @@
                                     <code class=code-block>
                                         data_pnd<br>
                                         <br>
-                                        _diffrn_radiation_wavelength 0.84<br>
+                                        _setup_wavelength 0.84<br>
+                                        _setup_field 1.0<br>
                                         _diffrn_radiation_polarization 0.0<br>
                                         _diffrn_radiation_efficiency 1.0<br>
-                                        _diffrn_ambient_field 1.0<br>
                                         <br>
                                         _pd_2theta_range_min 4.000<br>
                                         _pd_2theta_range_max 80.000<br>
-                                        _pd_calib_2theta_offset -0.1()<br>
+                                        _setup_offset_2theta -0.1<br>
                                         <br>
                                         _pd_instr_resolution_u 16.9776<br>
                                         _pd_instr_resolution_v -2.8357<br>
@@ -368,10 +383,10 @@
                                         _pd_instr_resolution_x 0.0<br>
                                         _pd_instr_resolution_y 0.0<br>
                                         <br>
-                                        _pd_chi2_sum True<br>
-                                        _pd_chi2_diff False<br>
-                                        _pd_chi2_up False<br>
-                                        _pd_chi2_down False<br>
+                                        _chi2_sum True<br>
+                                        _chi2_diff False<br>
+                                        _chi2_up False<br>
+                                        _chi2_down False<br>
                                         <br>
                                         loop_<br>
                                         _pd_phase_label<br>
