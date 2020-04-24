@@ -1,0 +1,3 @@
+1. Image - Adjustments - Black & White... - OK
+2. Image - Adjustments - Hue/Saturation... - Lightness: 50 - OK
+3. Filter - Blur - Motion Blur - Distance: 4px - OK
