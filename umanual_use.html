@@ -98,25 +98,25 @@
                               <p>The toolbar at the top of the application window contains three groups of buttons, indicated on the
                                 screenshot below.</p>
                               <figure><img src="images/ed_how-to-use_toolbar_overview.png"></figure>
-                                <p>On the left side in group A the following buttons are available: </p>
+                                <p>On the left side in <b>group A</b> the following buttons are available: </p>
                               <ol>
                                 <li><code>Application preferences</code> Opens dialog where application settings can be changed. </li>
                                 <li><code>Save current project state</code> Saves the current state of project to .zip file. </li>
                               </ol>
-                              <p>The central group of buttons, B, represent the data analysis workflow. When you create a new project,
-                                all toolbar buttons but <code>Home</code> are disabled. When each step in the workflow is completed,
-                                the toolbar button which corresponds to the next step becomes enabled.</p>
+                              <p>The central group of buttons, <b>group B</b>, represent the data analysis workflow. When you create a new project,
+                                all toolbar workflow buttons but <code>Home</code> are disabled. When each step in the workflow is completed,
+                                the toolbar workflow button which corresponds to the next step becomes enabled.</p>
                               <figure><img src="images/ed_how-to-use_toolbar.png"></figure>
-                              <p>The following buttons (workflow steps) are present in the <a href="index.html">easyDiffraction</a> toolbar:</p>
+                              <p>The following workflow buttons (workflow steps) are present in the <a href="index.html">easyDiffraction</a> toolbar:</p>
                               <ol>
                                 <li><code>Home</code> introduction page, links to about, help and contact. </li>
                                 <li><code>Project</code> to manage your project (create new, open existing, etc.) </li>
-                                <li><code>Sample Model</code> to describe sample phases.</li>
-                                <li><code>Experimental Data</code> to load experimentally measured data files.</li>
+                                <li><code>Sample</code> to describe sample phases.</li>
+                                <li><code>Experiment</code> to load experimentally measured data files.</li>
                                 <li><code>Analysis</code> to perform refinement of structural parameters.</li>
                                 <li><code>Summary</code> to view and export summary report.</li>
                               </ol>
-                              <p>The buttons in group C contain a undo and redo button that can be used if a mistake is made.</p>
+                              <p>The buttons in <b>group C</b> are undo and redo buttons that can be used if a mistake is made.</p>
                               <!--<p>You can switch between the available tabs at any time by clicking on their names.</p>-->
                             <article>
                           </div>
@@ -162,7 +162,7 @@
                             <article>
                           </div>
                           <!-- sub-section -->
-                          
+
                           <!-- sub-section -->
                           <div class="doc-subsection" id="3.1.4.-settings">
                             <article>
@@ -202,8 +202,9 @@
                                 <h3 id="3.2.2.-project">3.2.2. Create/Open project</a></h3>
                                 <p>All manipulations of the project can be performed on the <code>Project</code> tab.</p>
                                 <p>To start using <a href="index.html">easyDiffraction</a>, please click the <code>Create a new project</code>
-                                  button to start a new project, or click the <code>Open another project</code> button and select a
-                                  <b>main.rcif</b> file from one of the provided examples.</p>
+                                  button to start a new project, or click the <code>Open an existing project</code> button and select zipped
+                                  project saved earlier or <b>main.cif</b> file from the existing project folder. Alternatively, you can
+                                  load one of the provided exemples by clicking <code>Open</code> button in the Examples table.</p>
                                 <figure><img src="images/ed_how-to-use_home.png"></figure>
 
                                 <!--- sub-sub-section --->
@@ -211,9 +212,10 @@
                                     <h4>Supported file formats</h4>
                                     <p>Currently, <a href="index.html">easyDiffraction</a> works best with the STAR/CIF data format.
                                       Click <a href="umanual_intro.html#1.2.-cif-based-format">here</a> to learn more about that.
-                                      It is however also possible to load experimental data in .xye format with data in raw text.
-                                      Three columns are interpreted as 2theta, Intensity and Error, while five columns are interpreted as
-                                      polarized data with spin up intensity / error followed by spin down intensity / error.</p>
+                                      It is however also possible to load experimental data as plain text in <b>.dat</b> or <b>.xye</b> formats.
+                                      Three columns are interpreted as <b>2theta</b>, <b>Intensity</b> and <b>Error</b> from unpolarized neutrons
+                                      diffraction experiment, while five columns are interpreted as polarized data with <b>2theta</b>,
+                                      <b>Spin up intensity</b>, its <b>Error</b> followed by <b>Spin down intensity</b> and its <b>Error</b>.</p>
                                 </div>
                                 <!--- sub-sub-section --->
 
@@ -235,10 +237,8 @@
                                     <h4>Application sidebar</h4>
                                     <p>The application's sidebar contains the following groups:
                                     <ul>
-                                        <li><b>Get Started</b> group contains buttons to create, open, clone or save the project.
-                                          Currently, only the buttons named <code>Create new project</code> and <code>Open another project</code> are enabled.</li>
-                                        <li><b>Recent Projects</b> group is currently disabled</a>.</li>
-                                        <li><b>Examples</b> group is currently disabled</a>.</li>
+                                        <li><b>Get Started</b> group contains buttons to create, open, clone (currently disabled) or save the project.</li>
+                                        <li><b>Examples</b> group contains a few selected examples</a>.</li>
                                     </ul>
                                     </p>
                                     <p>The very bottom of the sidebar contains the following buttons:
@@ -364,7 +364,8 @@
                                 <!--- sub-sub-section --->
                                 <div class="doc-subsubsection">
                                     <h4>Supported file formats</h4>
-                                    <p>The instrument description is taken from an <b>experiments.cif</b> or <b>experiments.xye</b> file.
+                                    <p>The measured data are taken from an <b>experiments.cif</b> (including instrumental
+                                      parameters) or <b>experiments.xye</b> file.
                                       An example of a cif file is given below:
                                     <code class=code-block>
                                         data_pnd<br>
@@ -409,8 +410,9 @@
                                         80.0 64.78 9.1<br>
                                     </code>
                                     </p>
-                                    <p><a href="index.html">easyDiffraction</a> supports both polarized and unpolarized powder diffraction data.
-                                      Below is an example of the data section of the <b>experiments.cif</b> file for polarized data, a xye file with five columns in the same order can be used as well.
+                                    <p><a href="index.html">easyDiffraction</a> supports both polarized and unpolarized 1D powder diffraction data.
+                                      Below is an example of the data section of the <b>experiments.cif</b> file for polarized data, a xye file with
+                                      five columns in the same order can be used as well.
                                     <code class=code-block>
                                       loop_<br>
                                       _pd_meas_angle_2theta<br>
@@ -469,9 +471,13 @@
                                     <p>The application's sidebar contains the following groups:
                                     <ul>
                                         <li><b>Data explorer</b> shows experimental data file and contains button for loading data.</li>
-                                        <li><b>Instrument</b> contains information about the neutron scattering instrument.</li>
+                                        <li><b>Instrument and experiment type</b> contains information about the neutron scattering instrument.</li>
+                                        <li><b>Diffraction radiation</b> contains polarization and polarising efficiency for polarized neutron data.</li>
+                                        <li><b>Setup parameters</b> contains experimental zero shift, wavelength and magnetic field.</li>
                                         <li><b>Peak profile</b> contains information about the peak profile.</li>
-                                        <li><b>Misc</b> contains miscellaneous information.</li>
+                                        <li><b>Peak profile</b> contains background points.</li>
+                                        <li><b>Structural phases</b> contains name and scale of the associated phase.</li>
+                                        <li><b>Refinement</b> contains type of refinement for polarized neutron data.</li>
                                     </ul>
                                     </p>
                                     <p>The very bottom of the sidebar contains the following buttons:
@@ -520,13 +526,14 @@
 
                                     <p>The <code>Fitting</code> sidebar contains the following elements:
                                     <ul>
-                                        <li><b>Parameters</b> group shows the table of parameters. Starting values are shown, along with a checkbox for selecting the variable for fitting.</li>
+                                        <li><b>Parameters</b> group shows the table of parameters. Starting values are shown, along with
+                                          units, standard deviation and a checkbox for selecting the variable for fitting.</li>
                                         <li><b>Start/Stop fitting</b> button that initiates and stops fitting.</li>
                                     </ul>
                                     </p>
                                     <p>The <code>Text View</code> sidebar contans the following elements:
                                     <ul>
-                                        <li><b>Find</b> Search in the RCIF file (currently disabled).</li>
+                                        <li><b>Find</b> Search in the CIF file (currently disabled).</li>
                                     </ul>
                                     </p>
                                     <p>The very bottom of the sidebar contains the following buttons of each tab:
