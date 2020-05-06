@@ -79,19 +79,6 @@
   margin-top: 3em;
 }
 
-.video-frame {
-  margin-top: 1em;
-  border: #eaeaea solid 1px;
-  border-radius: 4px;
-}
-
-.video-frame video {
-  width: 100%;
-  height: auto;
-  margin-bottom: -0.3em;
-  border-radius: 3px;
-}
-
 /* misc */
 
 .active {

@@ -361,10 +361,104 @@ footer ul li {
 /***********/
 
 img {
+  max-width: 100%;
+
   margin: 0px;
   padding: 0px;
   border: none;
   border-radius: 0px;
+}
+
+.screenshot {
+  display: block;
+  overflow: hidden;
+
+  line-height: 0; /* removes extra padding on linked images */
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overlay {
+  /* Display over the entire page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+
+  /* We hide all this by default */
+  visibility: hidden;
+  opacity: 0;
+
+  /* Animation */
+  transition: opacity .3s;
+}
+
+.overlay img {
+  /* Maximum image size */
+  max-width: 100%;
+  max-height: 100%;
+
+  /* We keep the ratio of the image */
+  width: auto;
+  height: auto;
+
+  /* Absolute center */
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  /* Animation */
+  transform: scale(0.95);
+  transition: transform .3s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+
+  outline: none;
+  cursor: default;
+}
+
+/* Animation */
+.overlay:target img {
+    transform: scale(1);
+}
+
+/***********/
+/* Videos  */
+/***********/
+
+.video-frame {
+  grid-area: figure;
+  margin-top: 1em;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-frame video {
+  width: 100%;
+  height: auto;
+  margin-bottom: -0.3em;
+  border-radius: 3px;
 }
 
 /***********/
